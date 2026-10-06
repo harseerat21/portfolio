@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Harseerat Kaur | Product Manager</title>
-<meta name="description" content="Harseerat Kaur: product professional with 3.5 years across product, data analytics and engineering. Case studies: DASTAAR (100+ orders), an Explore page for a top consumer lending firm, and a B-school career platform.">
+<meta name="description" content="Harseerat Kaur: product professional with 3.5 years across product, data analytics and engineering. Star project: AI Interview Coach, a multi-agent voice mock interviewer. Case studies: DASTAAR (100+ orders), an Explore page for a top consumer lending firm, and a B-school career platform.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -230,6 +230,9 @@ footer{padding:26px 0 40px;text-align:center;font-weight:600;color:var(--muted);
 .persona .meta{font-size:.85rem;font-weight:700;color:var(--muted);margin:2px 0 10px}
 .persona p{margin:0 0 8px;font-size:.95rem}
 .persona .needs{font-weight:700;background:var(--bg);border-radius:10px;padding:8px 10px;font-size:.9rem}
+.pdl{margin:0 0 4px}
+.pdl dt{font-size:.72rem;font-weight:800;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);margin-top:8px}
+.pdl dd{margin:2px 0 0;font-size:.93rem;line-height:1.45}
 
 .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:22px}
 .stat{border:3px solid var(--line);border-radius:20px;box-shadow:5px 5px 0 var(--shadow);padding:18px 20px;color:var(--on);background:var(--c)}
@@ -519,6 +522,53 @@ footer{padding:26px 0 40px;text-align:center;font-weight:600;color:var(--muted);
 .th-e img{width:128px;height:auto;display:block;position:relative;filter:drop-shadow(5px 5px 0 #17173D)}
 .th-e img:first-child{transform:rotate(-6deg) translateX(14px);z-index:1}
 .th-e img:last-child{transform:rotate(5deg) translate(-14px,16px)}
+/* AI Interview Coach */
+.star-tag{display:inline-flex;align-items:center;gap:6px;font-weight:800;font-size:.82rem;background:var(--sun);color:#17173D;border:2.5px solid #17173D;border-radius:999px;padding:2px 12px;box-shadow:2px 2px 0 #17173D}
+.star-tag::before{content:"★";font-size:.95rem}
+.star-banner{margin:26px 0 0;max-width:560px;background:var(--paper);border:3px solid var(--line);border-radius:20px;box-shadow:6px 6px 0 var(--shadow);padding:16px 20px 18px;position:relative}
+.star-banner b{display:block;font-family:'Lilita One',sans-serif;font-weight:400;font-size:1.6rem;margin:8px 0 4px}
+.star-banner p{margin:0 0 14px;font-weight:600}
+.star-banner .btn{padding:8px 16px}
+.nav-star{background:var(--sun);color:#17173D!important;border:2.5px solid var(--line)!important;border-radius:10px;padding:3px 10px!important}
+.nav-star::before{content:"★ "}
+.case.star{border-width:4px;box-shadow:11px 11px 0 var(--shadow)}
+.th-c{background:#1B1E24;gap:0;min-height:320px}
+.th-c img:first-child{width:78%;max-width:400px;height:auto;display:block;border:3px solid #000;border-radius:12px;box-shadow:6px 6px 0 #000;transform:rotate(-3deg)}
+.th-c img:last-child{position:absolute;right:7%;bottom:-40px;width:26%;max-width:130px;height:auto;border:3px solid #000;border-radius:16px;box-shadow:5px 5px 0 #000;transform:rotate(5deg)}
+.agents{display:grid;grid-template-columns:1fr auto 1fr auto 1fr auto 1fr;align-items:stretch;gap:0}
+.ag{border:3px solid var(--line);border-radius:18px;padding:14px 14px 12px;background:var(--paper);box-shadow:5px 5px 0 var(--shadow);display:flex;flex-direction:column;border-top:12px solid var(--c)}
+.ag small{font-weight:800;color:var(--muted);font-size:.78rem}
+.ag h3{font-size:1.35rem;margin:4px 0 6px}
+.ag p{margin:0 0 10px;font-size:.92rem}
+.ag .mdl{margin-top:auto;align-self:flex-start;font-weight:800;font-size:.76rem;border:2px solid var(--line);border-radius:999px;padding:1px 9px;background:var(--bg)}
+.ag.main{transform:translateY(-6px)}
+.ag-ar{width:30px;align-self:center;height:3px;background:var(--line);position:relative;margin:0 4px}
+.ag-ar::after{content:"";position:absolute;right:-2px;top:-6px;border-left:10px solid var(--line);border-top:7.5px solid transparent;border-bottom:7.5px solid transparent}
+.ag-rails{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:22px}
+.ag-rails div{border:2.5px dashed var(--line);border-radius:14px;padding:10px 14px;font-size:.92rem;background:transparent}
+.ag-rails b{display:block;font-family:'Lilita One',sans-serif;font-weight:400;font-size:1.1rem}
+.tick{list-style:none;padding:0;margin:0 0 6px}
+.tick li{position:relative;padding-left:26px;margin-bottom:6px}
+.tick li::before{content:"";position:absolute;left:0;top:.3em;width:14px;height:14px;border:2.5px solid var(--line);border-radius:4px;background:var(--mint)}
+@media (max-width:900px){.agents{grid-template-columns:1fr;gap:14px}.ag-ar{width:3px;height:22px;justify-self:center;margin:0}.ag-ar::after{right:-6px;top:auto;bottom:-2px;border-left:7.5px solid transparent;border-right:7.5px solid transparent;border-top:10px solid var(--line);border-bottom:0}.ag.main{transform:none}.ag-rails{grid-template-columns:1fr}}
+@media (max-width:760px){.th-c{min-height:240px}.th-c img:last-child{bottom:-30px}}
+/* concise pass */
+details.more-detail{margin-top:22px;border:3px solid var(--line);border-radius:16px;background:var(--paper);box-shadow:4px 4px 0 var(--shadow);padding:0 18px}
+details.more-detail>summary{cursor:pointer;font-weight:800;padding:14px 0;list-style:none;display:flex;align-items:center;gap:10px}
+details.more-detail>summary::-webkit-details-marker{display:none}
+details.more-detail>summary::before{content:"+";display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;border:2.5px solid var(--line);border-radius:7px;background:var(--sun);color:#17173D;font-weight:800}
+details.more-detail[open]>summary::before{content:"−"}
+details.more-detail[open]{padding-bottom:18px}
+.metrics-line{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:22px 0 0}
+.metrics-line b{margin-right:4px}
+.metrics-line span{border:2.5px solid var(--line);border-radius:999px;padding:2px 12px;font-weight:700;font-size:.88rem;background:var(--paper)}
+.persona .needs{margin-top:8px}
+.way figcaption{padding:10px 12px}
+.decisions:has(> .dec:nth-child(4):last-child){grid-template-columns:repeat(4,minmax(0,1fr))}
+@media (max-width:900px){.decisions:has(> .dec:nth-child(4):last-child){grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.decisions:has(> .dec:nth-child(4):last-child){grid-template-columns:1fr}}
+.kit.kit3{grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:20px 30px}
+.kit.kit3 .stickers span{font-size:.85rem;padding:3px 11px}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 </style>
 </head>
@@ -528,7 +578,7 @@ footer{padding:26px 0 40px;text-align:center;font-weight:600;color:var(--muted);
   <div class="wrap">
     <a class="logo" href="#top" aria-label="Home">HK</a>
     <div class="links">
-      <a href="#work">Case studies</a><a href="#experience">Experience</a><a href="#about">About</a>
+      <a href="#/coach" class="nav-star">AI project</a><a href="#work">Case studies</a><a href="#experience">Experience</a><a href="#about">About</a>
       <a href="#toolkit">Toolkit</a><a href="#contact">Contact</a>
     </div>
     <button class="mode-btn" id="modeBtn" aria-pressed="false">Show all user stories</button>
@@ -540,26 +590,32 @@ footer{padding:26px 0 40px;text-align:center;font-weight:600;color:var(--muted);
 <header class="hero" id="top">
   <div class="wrap">
     <div>
-      <div class="story" data-id="US-01" data-a="a" data-who="hiring manager" data-want="to see what Harseerat has built within ten seconds" data-so="I can judge her product work, not just re-read her resume" data-done="Target role is above the fold|The first button leads to case studies|Contact is one click away"></div>
+      <div class="story" data-id="US-01" data-a="a" data-who="hiring manager" data-want="to see what Harseerat has built within ten seconds" data-so="I can judge her product work, not just re-read her resume" data-done="Target role is above the fold|The first button leads to her work|Contact is one click away"></div>
       <p class="hello">Hi, I'm</p>
       <h1>Harseerat Kaur</h1>
-      <p class="tagline">Product professional with 3.5 years across product, data analytics and engineering. MDI Gurgaon '26, ex-BlackRock, ex-Info Edge.</p>
-      <p class="bubble">I turn messy user and business problems into products people use, and I bring the SQL to prove they worked.</p>
+      <p class="tagline">Product professional. 3.5 years across product, data and engineering. MDI Gurgaon '26.</p>
+      <p class="bubble">I turn messy problems into products people use, and prove they worked with data.</p>
       <div class="cta-row">
         <a class="btn primary big" href="#work">View my work</a>
         <a class="btn big" href="#contact">Get in touch</a>
       </div>
-      <p class="hint">This site is built like a product backlog. Every section has a yellow <span>User story</span> note. Hover over or tap one to see who that section is for and what they need.</p>
+      <div class="star-banner">
+        <span class="star-tag">Star project</span>
+        <b>AI Interview Coach</b>
+        <p>A voice mock interviewer run by 4 AI agents. Live, with 61 automated tests.</p>
+        <div class="cta-row"><a class="btn primary" href="#/coach">See how I built it</a><a class="btn" href="https://harseerat21.github.io/interview_coach/" target="_blank" rel="noopener">Try it live</a></div>
+      </div>
+      <p class="hint">Tap a yellow <span>User story</span> note to see who each section is for.</p>
     </div>
     <aside class="road" aria-label="Career path">
       <h2>The road so far</h2>
       <ol>
         <li style="--c:var(--lilac)"><span class="yr">2016 to 2020</span><span class="what">B.E. Electronics &amp; Computers, Thapar Institute</span></li>
-        <li style="--c:var(--peach)"><span class="yr">2020</span><span class="what">Analyst, BlackRock</span></li>
-        <li style="--c:var(--mint)"><span class="yr">2022</span><span class="what">Senior Software Engineer, Info Edge</span></li>
+        <li style="--c:var(--peach)"><span class="yr">2020</span><span class="what">BlackRock</span></li>
+        <li style="--c:var(--mint)"><span class="yr">2022</span><span class="what">Info Edge</span></li>
         <li style="--c:var(--pink)"><span class="yr">2024</span><span class="what">PGDM, MDI Gurgaon</span></li>
-        <li style="--c:var(--sun)"><span class="yr">2025</span><span class="what">Product Management Intern, Bajaj Finance</span></li>
-        <li class="now" style="--c:var(--blue)"><span class="yr">2026, now</span><span class="what">Consultant, Indus Insights</span></li>
+        <li style="--c:var(--sun)"><span class="yr">2025</span><span class="what">Bajaj Finance</span></li>
+        <li class="now" style="--c:var(--blue)"><span class="yr">2026, now</span><span class="what">Indus Insights</span></li>
       </ol>
     </aside>
   </div>
@@ -569,10 +625,21 @@ footer{padding:26px 0 40px;text-align:center;font-weight:600;color:var(--muted);
   <div class="wrap">
     <div class="sec-head">
       <h2>Case studies</h2>
-      <div class="story" data-id="US-02" data-a="an" data-who="interviewer" data-want="to walk through real product work from problem to screens to impact" data-so="I can see how she thinks, not only what she shipped" data-done="Each case study shows problem, users, customer journey and impact|Real screens back up the story"></div>
-      <p class="sec-sub">Three products I owned end to end. Each one walks through the problem, the users, the customer journey and the impact.</p>
+      <div class="story" data-id="US-02" data-a="an" data-who="interviewer" data-want="to see real product work, from problem to impact" data-so="I can see how she thinks, not only what she shipped" data-done="Each case study fits in a few minutes|Real screens back up the story"></div>
     </div>
     <div class="cases">
+      <a class="case star" href="#/coach">
+        <div class="thumb th-c" aria-hidden="true">
+          <img src="img/ic-call.jpg" alt="" width="1400" height="875"><img src="img/ic-report-m.jpg" alt="" width="780" height="1688">
+        </div>
+        <div class="body">
+          <span class="kicker" style="background:var(--sun)">Star project: agentic AI</span>
+          <h3>AI Interview Coach</h3>
+          <p>Tara, an AI interviewer, runs a voice interview and scores every answer.</p>
+          <div class="tags"><span>4 AI agents</span><span>61 tests</span><span>Voice</span><span>Live</span></div>
+          <span class="fake-btn">Read the case study</span>
+        </div>
+      </a>
       <a class="case" href="#/dastaar">
         <div class="thumb th-d" aria-hidden="true">
           <img src="img/home-hero.jpg" alt="" width="540" height="1043"><img src="img/pdp-top.jpg" alt="" width="540" height="1128">
@@ -580,9 +647,9 @@ footer{padding:26px 0 40px;text-align:center;font-weight:600;color:var(--muted);
         </div>
         <div class="body">
           <span class="kicker">Live, 100+ orders</span>
-          <h3>DASTAAR: taking a 1973 turban shop online</h3>
-          <p>I designed and built the online store for my family's turban business in Jalandhar. It has taken 100+ orders so far, shipped to India, Canada, the USA and Australia.</p>
-          <div class="tags"><span>0 to 1</span><span>E-commerce</span><span>Brand</span><span>Web build</span></div>
+          <h3>DASTAAR</h3>
+          <p>My family's 1973 turban shop, taken online. 100+ orders across 4 countries.</p>
+          <div class="tags"><span>0 to 1</span><span>E-commerce</span><span>Live</span></div>
           <span class="fake-btn">Read the case study</span>
         </div>
       </a>
@@ -591,10 +658,10 @@ footer{padding:26px 0 40px;text-align:center;font-weight:600;color:var(--muted);
           <img src="img/ex-home.png" alt="" width="393" height="812"><img src="img/ex-explore.png" alt="" width="393" height="812">
         </div>
         <div class="body">
-          <span class="kicker" style="background:var(--sun)">Top consumer lending firm, 2025</span>
-          <h3>Designing the Explore page for a 52M-user app</h3>
-          <p>Users opened the app to pay an EMI and left. I researched why and designed a discovery page to bring them back.</p>
-          <div class="tags"><span>27 interviews</span><span>94 surveys</span><span>Wireframes</span><span>Roadmap</span></div>
+          <span class="kicker" style="background:var(--sun)">Top consumer lending firm</span>
+          <h3>The Explore page</h3>
+          <p>Users paid their EMI and left. I designed a page to make them stay.</p>
+          <div class="tags"><span>27 interviews</span><span>94 surveys</span><span>Roadmap</span></div>
           <span class="fake-btn">Read the case study</span>
         </div>
       </a>
@@ -604,16 +671,16 @@ footer{padding:26px 0 40px;text-align:center;font-weight:600;color:var(--muted);
         </div>
         <div class="body">
           <span class="kicker">Live project, 6 weeks</span>
-          <h3>A B-school career platform: from wishlist to MVP in 6 weeks</h3>
-          <p>An early-stage B-school community wanted a website for students, colleges and companies. I scoped the MVP, wrote the PRDs, designed the screens and planned the build.</p>
-          <div class="tags"><span>PRDs</span><span>Prioritisation</span><span>Hi-fi design</span><span>Sprint plan</span></div>
+          <h3>B-school career platform</h3>
+          <p>A startup's wishlist, turned into a scoped and designed MVP.</p>
+          <div class="tags"><span>PRDs</span><span>Prioritisation</span><span>Hi-fi design</span></div>
           <span class="fake-btn">Read the case study</span>
         </div>
       </a>
     </div>
     <div class="more">
-      <article class="proj"><h3>Virtuorigin</h3><span class="dur">26 weeks, live project</span><p>Sized a $150M+ market from 50 reports and 25 interviews, then built a 5-year go-to-market roadmap across 7 categories.</p></article>
-      <article class="proj"><h3>BikeX</h3><span class="dur">Bike rental booking site</span><p>Designed and built the booking flow for self-ride bike rentals: three ways into one booking, and one-way trips across four cities in Punjab.</p><a class="proj-link" href="https://github.com/harseerat21/bikeX" target="_blank" rel="noopener">View the code on GitHub</a></article>
+      <article class="proj"><h3>Virtuorigin</h3><span class="dur">26 weeks, live project</span><p>Sized a $150M+ market and built a 5-year go-to-market roadmap.</p></article>
+      <article class="proj"><h3>BikeX</h3><span class="dur">Side build</span><p>A self-ride bike rental booking site, built from scratch.</p><a class="proj-link" href="https://github.com/harseerat21/bikeX" target="_blank" rel="noopener">View the code</a></article>
     </div>
   </div>
 </section>
@@ -622,7 +689,7 @@ footer{padding:26px 0 40px;text-align:center;font-weight:600;color:var(--muted);
   <div class="wrap">
     <div class="sec-head">
       <h2>Experience</h2>
-      <div class="story" data-id="US-03" data-a="a" data-who="hiring manager" data-want="to see outcomes rather than tasks" data-so="I can judge the impact she would have on my team" data-done="Every win leads with a metric|Roles are newest first|Each role has its own end-user story"></div>
+      <div class="story" data-id="US-03" data-a="a" data-who="hiring manager" data-want="to see outcomes rather than tasks" data-so="I can judge the impact she would have on my team" data-done="Every line leads with a result|Roles are newest first"></div>
     </div>
     <div class="jobs">
       <article class="job big">
@@ -632,15 +699,12 @@ footer{padding:26px 0 40px;text-align:center;font-weight:600;color:var(--muted);
             <p class="role">Consultant, Product &amp; Growth Strategy, US Consumer Lending Platform</p>
             <span class="when">Apr 2026 to now, Gurugram</span>
           </div>
-          <div class="story right" data-id="US-03a" data-a="the" data-who="head of a US lending platform" data-want="to grow acquisitions without growing fraud losses" data-so="every new customer is a profitable one" data-done="Risky channels are found and fixed|At-risk cohorts are flagged early|KPIs update without manual work"></div>
+          <div class="story right" data-id="US-03a" data-a="the" data-who="head of a US lending platform" data-want="to grow acquisitions without growing fraud losses" data-so="every new customer is a profitable one" data-done="Risky channels are found and fixed|At-risk cohorts are flagged early"></div>
         </div>
         <ul>
-          <li>Own fraud and growth product strategy for a <mark>$0.8B</mark> lending platform, working directly with client leadership</li>
-          <li>Found a channel with 60% rejects and 120% write-off to revenue; my business case saved <mark>$5M</mark> in bad debt</li>
-          <li>Diagnosed funnel drop-offs across 10+ segments; shipped policy changes that lifted conversion <mark>15%</mark> and fraud catch <mark>20%</mark></li>
-          <li>Built an early-warning monitor for at-risk cohorts, reaching <mark>30%</mark> of losses sooner</li>
-          <li>Built Claude-powered LLM reporting automation, cutting manual effort <mark>40%</mark></li>
-          <li>Own the executive dashboards and product KPIs</li>
+          <li><mark>$5M</mark> bad debt saved by cutting a loss-making acquisition channel</li>
+          <li><mark>+15%</mark> conversion and <mark>+20%</mark> fraud catch from policy changes across 10+ segments</li>
+          <li><mark>40%</mark> less manual reporting with Claude-powered automation</li>
         </ul>
       </article>
       <article class="job">
@@ -653,13 +717,11 @@ footer{padding:26px 0 40px;text-align:center;font-weight:600;color:var(--muted);
           <div class="story right" data-id="US-03b" data-a="a" data-who="Bajaj app user" data-want="a page that shows me what's new and relevant to me" data-so="I find the right product without digging" data-done="User intents come from real research|MVP and KPIs are agreed by all teams"></div>
         </div>
         <ul>
-          <li>Owned the vision and requirements for the Explore page and a GenAI personalization engine, aligning <mark>12+</mark> stakeholders</li>
-          <li>Ran <mark>27</mark> interviews and <mark>94</mark> surveys; built 5 personas and journey maps, benchmarking 10+ competitor apps</li>
-          <li>Built a 5-phase roadmap for 4 initiatives, targeting <mark>+15%</mark> engagement and <mark>+12%</mark> repeat visits</li>
-          <li>Found a <mark>49%</mark> funnel drop-off in Mixpanel and turned it into 3 UX and process fixes</li>
-          <li>Owned the homepage UPI strip integration end to end</li>
+          <li>Led the Explore page and GenAI personalization, aligning <mark>12+</mark> stakeholders</li>
+          <li><mark>27</mark> interviews and <mark>94</mark> surveys, turned into 5 personas</li>
+          <li>Found a <mark>49%</mark> funnel drop-off and turned it into 3 fixes</li>
         </ul>
-        <a class="cs-link" href="#/explore">Read the Explore page case study</a>
+        <a class="cs-link" href="#/explore">Read the case study</a>
       </article>
       <article class="job">
         <div class="job-top">
@@ -668,13 +730,12 @@ footer{padding:26px 0 40px;text-align:center;font-weight:600;color:var(--muted);
             <p class="role">Senior Software Engineer, Technology (Shiksha)</p>
             <span class="when">Apr 2022 to Aug 2023, Noida</span>
           </div>
-          <div class="story right" data-id="US-03c" data-a="a" data-who="student exploring colleges" data-want="quick, guided onboarding" data-so="I can register and get counselling without friction" data-done="A chatbot guides sign-up across categories|Leads reach the right counsellor fast"></div>
+          <div class="story right" data-id="US-03c" data-a="a" data-who="student exploring colleges" data-want="quick, guided onboarding" data-so="I can register and get counselling without friction" data-done="A chatbot guides sign-up|Leads reach the right counsellor fast"></div>
         </div>
         <ul>
-          <li>Shipped an AI onboarding chatbot with product and business teams, lifting registrations <mark>25%</mark></li>
-          <li>Led scope and delivery for a 500+ page migration and 200+ workflows: <mark>+60%</mark> engagement</li>
-          <li>Rolled out smart lead allocation for 100+ counsellors: <mark>+20%</mark> conversion efficiency</li>
-          <li>Won the Toppers Award for <mark>30%</mark> faster turnaround on 50K+ listings</li>
+          <li><mark>+25%</mark> registrations from an AI onboarding chatbot</li>
+          <li><mark>+60%</mark> engagement from a 500+ page migration I scoped and led</li>
+          <li><mark>+20%</mark> conversion efficiency from smart lead allocation</li>
         </ul>
       </article>
       <article class="job">
@@ -684,11 +745,11 @@ footer{padding:26px 0 40px;text-align:center;font-weight:600;color:var(--muted);
             <p class="role">Analyst, Securities Lending</p>
             <span class="when">Jul 2020 to Apr 2022, Gurugram</span>
           </div>
-          <div class="story right" data-id="US-03d" data-a="an" data-who="operations analyst" data-want="data from four platforms in one place" data-so="I spend my time on decisions instead of reconciliation" data-done="Data is consolidated and scales 10x|Processing accuracy reaches 99%"></div>
+          <div class="story right" data-id="US-03d" data-a="an" data-who="operations analyst" data-want="data from four platforms in one place" data-so="I spend my time on decisions instead of reconciliation" data-done="Data is consolidated|Processing accuracy reaches 99%"></div>
         </div>
         <ul>
-          <li>Consolidated data across 4 platforms: <mark>+40%</mark> efficiency, scaled to <mark>10x</mark> volume</li>
-          <li>Raised processing accuracy to <mark>99%</mark> and throughput <mark>30%</mark>; resolved 100+ critical production issues</li>
+          <li><mark>+40%</mark> efficiency by consolidating data across 4 platforms</li>
+          <li><mark>99%</mark> processing accuracy and <mark>+30%</mark> throughput</li>
         </ul>
       </article>
     </div>
@@ -699,17 +760,16 @@ footer{padding:26px 0 40px;text-align:center;font-weight:600;color:var(--muted);
   <div class="wrap">
     <div class="sec-head">
       <h2>About me</h2>
-      <div class="story" data-id="US-04" data-a="a" data-who="product lead" data-want="to understand the mix of skills Harseerat brings" data-so="I know she can work with engineers, analysts and business teams alike" data-done="Background fits in under 100 words|Each strength links to real work"></div>
+      <div class="story" data-id="US-04" data-a="a" data-who="product lead" data-want="to understand the mix of skills Harseerat brings" data-so="I know she can work with engineers, analysts and business teams alike" data-done="Background fits in a few lines|Each strength links to real work"></div>
     </div>
     <div class="about-grid">
       <div>
-        <p>I'm a product manager who started as an engineer and grew up on data. I've shipped AI-powered consumer products, built LLM automations, and used funnels to find where users drop off and why.</p>
-        <p>I like the whole arc: talking to users, writing the PRD, prioritising the roadmap, then checking the numbers after launch to see if we were right.</p>
+        <p>I started as an engineer, grew up on data, and now build products end to end: from user interviews to the PRD to the numbers after launch.</p>
       </div>
       <div class="hats">
-        <div class="hat"><h3>I own the problem</h3><p>Discovery, PRDs, roadmaps and launches at Bajaj Finance, Indus Insights and on DASTAAR (100+ orders).</p></div>
-        <div class="hat"><h3>I speak data</h3><p>SQL, Python, Mixpanel, CleverTap. Funnels and cohorts are how I think.</p></div>
-        <div class="hat"><h3>I've been the engineer</h3><p>Two years building at Info Edge. I know what a sprint really costs.</p></div>
+        <div class="hat"><h3>I own the problem</h3><p>Bajaj Finance, Indus Insights, DASTAAR and my AI coach.</p></div>
+        <div class="hat"><h3>I speak data</h3><p>SQL, Python, Mixpanel. Funnels and cohorts.</p></div>
+        <div class="hat"><h3>I've been the engineer</h3><p>Two years at Info Edge. I know what a sprint costs.</p></div>
       </div>
     </div>
   </div>
@@ -719,13 +779,13 @@ footer{padding:26px 0 40px;text-align:center;font-weight:600;color:var(--muted);
   <div class="wrap">
     <div class="sec-head">
       <h2>Toolkit</h2>
-      <div class="story" data-id="US-05" data-a="a" data-who="recruiter" data-want="to scan her skills by category" data-so="I can match them to my job description in seconds" data-done="Skills sit in four groups|Tools are named, not implied|Strongest skills stand out"></div>
+      <div class="story" data-id="US-05" data-a="a" data-who="recruiter" data-want="to scan her skills by category" data-so="I can match them to my job description in seconds" data-done="Skills sit in four groups|Strongest skills stand out"></div>
     </div>
     <div class="kit">
-      <div style="--c:var(--pink)"><h3><i></i>Product management</h3><div class="stickers"><span class="hot">Product strategy &amp; vision</span><span class="hot">Product discovery</span><span>Roadmaps</span><span>PRDs</span><span>User stories</span><span>Acceptance criteria</span><span>Backlog prioritisation</span><span>MVP definition</span><span>Product lifecycle</span><span>Go-to-market</span><span>End-to-end ownership</span><span>Success metrics</span></div></div>
-      <div style="--c:var(--mint)"><h3><i></i>Data &amp; analytics</h3><div class="stickers"><span class="hot">SQL</span><span class="hot">Product analytics</span><span>Python</span><span>A/B testing</span><span>Funnel &amp; cohort analysis</span><span>KPI definition</span><span>Dashboards</span><span>CleverTap</span><span>Mixpanel</span><span>Power BI</span><span>Tableau</span><span>User research</span><span>Competitive analysis</span></div></div>
-      <div style="--c:var(--lilac)"><h3><i></i>AI &amp; technical</h3><div class="stickers"><span class="hot">GenAI</span><span class="hot">LLM integration</span><span>Prompt design</span><span>Conversational AI</span><span>Context handling</span><span>Model evaluation</span><span>AI workflows</span><span>AI personalization</span><span>Rapid prototyping</span><span>APIs</span><span>System design</span><span>Claude</span><span>n8n</span></div></div>
-      <div style="--c:var(--peach)"><h3><i></i>Delivery &amp; collaboration</h3><div class="stickers"><span class="hot">Stakeholder management</span><span class="hot">Cross-functional leadership</span><span>Agile / Scrum</span><span>Sprint planning</span><span>Release management</span><span>Requirements gathering</span><span>Jira</span><span>Confluence</span><span>Figma</span><span>Miro</span></div></div>
+      <div style="--c:var(--pink)"><h3><i></i>Product</h3><div class="stickers"><span class="hot">Product discovery</span><span class="hot">PRDs</span><span>Roadmaps</span><span>Prioritisation</span><span>MVP definition</span><span>Go-to-market</span><span>Success metrics</span></div></div>
+      <div style="--c:var(--mint)"><h3><i></i>Data</h3><div class="stickers"><span class="hot">SQL</span><span class="hot">Product analytics</span><span>Python</span><span>A/B testing</span><span>Funnels &amp; cohorts</span><span>Mixpanel</span><span>Power BI</span></div></div>
+      <div style="--c:var(--lilac)"><h3><i></i>AI</h3><div class="stickers"><span class="hot">Multi-agent systems</span><span class="hot">GenAI</span><span class="hot">LLM integration</span><span>Agentic loops</span><span>Tool use</span><span>LLM-as-a-judge</span><span>Model evaluation</span><span>Prompt design</span><span>Conversational AI</span><span>Context handling</span><span>AI workflows</span><span>AI personalization</span><span>Speech AI (ASR, TTS)</span><span>Model routing</span><span>AI safety guardrails</span><span>Rapid prototyping</span><span>APIs</span><span>System design</span><span>Claude</span><span>n8n</span><span>Groq</span><span>Cloudflare Workers</span></div></div>
+      <div style="--c:var(--peach)"><h3><i></i>Delivery</h3><div class="stickers"><span class="hot">Stakeholder management</span><span>Agile / Scrum</span><span>Jira</span><span>Figma</span><span>Miro</span></div></div>
     </div>
   </div>
 </section>
@@ -734,11 +794,11 @@ footer{padding:26px 0 40px;text-align:center;font-weight:600;color:var(--muted);
   <div class="wrap">
     <div class="sec-head">
       <h2>Credentials</h2>
-      <div class="story" data-id="US-06" data-a="a" data-who="campus recruiter" data-want="her education, wins and certifications at a glance" data-so="I can clear the screening checklist quickly" data-done="Degrees show school, years and scores|Competition ranks show the size of the field"></div>
+      <div class="story" data-id="US-06" data-a="a" data-who="campus recruiter" data-want="her education, wins and certifications at a glance" data-so="I can clear the screening checklist quickly" data-done="Degrees show school, years and scores|Ranks show the size of the field"></div>
     </div>
     <div class="creds">
-      <div class="cred"><h3>Education</h3><ul><li><b>MDI Gurgaon</b>Post Graduate Diploma in Management, 2024 to 2026<br><small>CGPA 7.4 / 10</small></li><li><b>Thapar Institute of Engineering &amp; Technology, Patiala</b>B.E. Electronics &amp; Computers, 2016 to 2020<br><small>CGPA 8.7 / 10</small></li></ul></div>
-      <div class="cred"><h3>Wins &amp; leadership</h3><ul><li><b>Kenvue Future Leaders</b><small>Top 30 of 3.5K+</small></li><li><b>Flipkart Vidyarthini</b><small>Top 72 of 2K+</small></li><li><b>Unstop</b><small>Top 100 B-School Leaders</small></li><li><b>ThinC, Senior Member</b><small>Led 7 live product projects, co-authored the Product Casebook, and drove initiatives engaging 1.2K+ students</small></li></ul></div>
+      <div class="cred"><h3>Education</h3><ul><li><b>MDI Gurgaon</b>PGDM, 2024 to 2026<br><small>CGPA 7.4 / 10</small></li><li><b>Thapar Institute of Engineering &amp; Technology</b>B.E. Electronics &amp; Computers, 2016 to 2020<br><small>CGPA 8.7 / 10</small></li></ul></div>
+      <div class="cred"><h3>Wins</h3><ul><li><b>Kenvue Future Leaders</b><small>Top 30 of 3.5K+</small></li><li><b>Flipkart Vidyarthini</b><small>Top 72 of 2K+</small></li><li><b>Unstop</b><small>Top 100 B-School Leaders</small></li><li><b>ThinC, Senior Member</b><small>Led 7 live product projects</small></li></ul></div>
       <div class="cred"><h3>Certifications</h3><ul><li><b>Lean Six Sigma Green Belt</b><small>KPMG</small></li><li><b>Project Management</b><small>Google</small></li><li><b>Data Analyst Toolbox</b></li></ul></div>
     </div>
   </div>
@@ -749,13 +809,194 @@ footer{padding:26px 0 40px;text-align:center;font-weight:600;color:var(--muted);
     <div class="contact-box">
       <div class="sec-head">
         <h2>Hiring a PM? Let's talk.</h2>
-        <div class="story" data-id="US-07" data-a="a" data-who="hiring manager who is convinced" data-want="to reach Harseerat in one click" data-so="we can set up a conversation this week" data-done="Email and LinkedIn are one tap away|Location is clear"></div>
+        <div class="story" data-id="US-07" data-a="a" data-who="hiring manager who is convinced" data-want="to reach Harseerat in one click" data-so="we can set up a conversation this week" data-done="Email and LinkedIn are one tap away"></div>
       </div>
-      <p>Based in Gurgaon, India. Open to product management roles in consumer tech, fintech and AI products.</p>
-      <div class="cta-row"><a class="btn" href="mailto:harseerat21@gmail.com">Email me</a><a class="btn alt" href="https://linkedin.com/in/harseerat-kaur-01" target="_blank" rel="noopener">Connect on LinkedIn</a></div>
+      <p>Open to PM roles in consumer tech, fintech and AI. Based in Gurgaon.</p>
+      <div class="cta-row"><a class="btn" href="mailto:harseerat21@gmail.com">Email me</a><a class="btn alt" href="https://linkedin.com/in/harseerat-kaur-01" target="_blank" rel="noopener">LinkedIn</a><a class="btn" href="https://harseerat21.github.io/interview_coach/" target="_blank" rel="noopener">Try my AI coach</a></div>
     </div>
   </div>
 </section>
+</main>
+
+<!-- ======================= AI INTERVIEW COACH CASE STUDY ======================= -->
+<main id="view-coach" hidden>
+  <div class="wrap">
+    <div class="cs-top">
+      <a class="back" href="#work">Back to all work</a><br>
+      <div class="story" data-id="US-C0" data-a="a" data-who="hiring manager" data-want="to see the project working, not just read about it" data-so="I can judge what she can build with AI" data-done="The live app is one click away|The code is public"></div>
+      <span class="star-tag">Star project</span>
+      <h1 class="cs-title" style="--c:var(--sun)">AI Interview Coach</h1>
+      <p class="cs-lede">An AI interviewer that listens to your spoken answers and tells you how to make them better.</p>
+      <div class="bb-hero">
+        <figure class="browser" style="margin:0">
+          <div class="chrome" aria-hidden="true"><i></i><i></i><i></i><span>harseerat21.github.io/interview_coach</span></div>
+          <button class="zoom" type="button"><img src="img/ic-call.jpg" width="1400" height="875" alt="The interview call screen: Tara, an illustrated AI interviewer, the candidate's camera tile, and question 1 of 3."></button>
+        </figure>
+        <figure class="bb-phone"><div class="phone real sm"><button class="scr zoom" type="button"><img src="img/ic-report-m.jpg" width="780" height="1688" alt="The report on a phone: a score ring, a verdict and ranked answers."></button></div></figure>
+      </div>
+      <div class="glance">
+        <div><b>My role</b><span>Product, design and build</span></div>
+        <div><b>What it is</b><span>Agentic AI app, live</span></div>
+        <div><b>AI</b><span>4 agents</span></div>
+        <div><b>Quality</b><span>61 automated tests</span></div>
+      </div>
+      <div class="cta-row"><a class="btn primary" href="https://harseerat21.github.io/interview_coach/" target="_blank" rel="noopener">Try it live</a><a class="btn" href="https://github.com/harseerat21/interview_coach" target="_blank" rel="noopener">View the code</a></div>
+    </div>
+
+    <section class="cs-sec" id="c-problem">
+      <div class="sec-head"><h2>The problem</h2>
+        <div class="story" data-id="US-C1" data-a="a" data-who="candidate" data-want="to practise saying my answers out loud" data-so="I don't ramble or freeze in the real interview" data-done="The real gap is named"></div></div>
+      <div class="two">
+        <div class="prose">
+          <p>People prep by reading questions, but struggle to tell a clear story out loud. Human mock interviews help, but they're costly and hard to book.</p>
+          <div class="hmw"><small>How might we</small>give anyone a realistic mock interview, any time, for free?</div>
+        </div>
+        <div class="box"><h3>Built to be reliable</h3><ul><li><b>61 automated tests</b>, plus end-to-end browser runs on laptop and phone</li><li>Every AI call has a fallback in code, so an interview always reaches a report</li></ul></div>
+      </div>
+    </section>
+
+    <section class="cs-sec" id="c-users">
+      <div class="sec-head"><h2>Who it's for</h2>
+        <div class="story" data-id="US-C2" data-a="a" data-who="reviewer" data-want="to see who the coach is designed around" data-so="I can check the features against real needs" data-done="Each persona has a goal, a frustration and a habit|Each persona maps to a feature"></div>
+        <p class="sec-sub">Three people preparing for interviews, at three stages of their career.</p></div>
+      <div class="personas">
+        <div class="persona"><div class="face" style="--c:var(--lilac)">S</div><h3>Sneha, 22</h3><p class="meta">Final-year student · campus placements</p>
+          <dl class="pdl"><dt>Wants</dt><dd>To crack her first HR and behavioural rounds.</dd><dt>Frustration</dt><dd>Knows the answers in her head, but rambles and says "um" when she speaks.</dd><dt>How she prepares</dt><dd>Reads question lists the night before; never practises out loud.</dd></dl>
+          <p class="needs">Gets: a realistic voice call and filler-word counts</p></div>
+        <div class="persona"><div class="face" style="--c:var(--mint)">K</div><h3>Karan, 27</h3><p class="meta">2 years in sales · switching to product</p>
+          <dl class="pdl"><dt>Wants</dt><dd>Questions for the role he wants, not the one he has.</dd><dt>Frustration</dt><dd>Generic question banks don't match product interviews.</dd><dt>How he prepares</dt><dd>Pastes job descriptions and preps for each company.</dd></dl>
+          <p class="needs">Gets: role-based questions tuned to a pasted JD</p></div>
+        <div class="persona"><div class="face" style="--c:var(--peach)">M</div><h3>Meera, 33</h3><p class="meta">6 years in operations · interviewing after a long gap</p>
+          <dl class="pdl"><dt>Wants</dt><dd>Her strong stories, told sharply again.</dd><dt>Frustration</dt><dd>Forgets the numbers and says "we" instead of "I".</dd><dt>How she prepares</dt><dd>Short on time; practises in 10-minute bursts.</dd></dl>
+          <p class="needs">Gets: STAR gaps, impact scoring and a better version of each answer</p></div>
+      </div>
+    </section>
+
+    <section class="cs-sec" id="c-journey">
+      <div class="sec-head"><h2>Customer journey</h2>
+        <div class="story" data-id="US-C3" data-a="a" data-who="candidate" data-want="a mock interview that feels real and ends with clear next steps" data-so="I know exactly what to fix" data-done="Tara reacts to what I said|The report is ready within a minute"></div>
+        <p class="sec-sub">Real screens from the app. Tap any to enlarge.</p></div>
+      <ol class="jmap">
+        <li class="jstep" style="--c:var(--lilac)">
+          <div class="jtext">
+            <h3>Picks a role and level</h3>
+            <p>Any job title. A job description is optional.</p>
+            <div class="chips"><span>Fresher</span><span>1–3 years</span><span>3–7 years</span><span>7+ years</span></div>
+          </div>
+          <figure class="jshot"><div class="phone real sm"><button class="scr zoom" type="button"><img src="img/ic-03-green-m.jpg" loading="lazy" width="780" height="1688" alt="The green room: camera preview, mic check and Join interview button."></button></div><figcaption class="jcap">Green room</figcaption></figure>
+        </li>
+        <li class="jstep" style="--c:var(--sun)">
+          <div class="jtext">
+            <h3>Joins a call with Tara</h3>
+            <p>Three fresh questions, about 10 minutes.</p>
+            <div class="chips"><span>Behavioural</span><span>Domain</span><span>HR</span></div>
+          </div>
+          <figure class="jshot wide"><div class="browser sm"><div class="chrome" aria-hidden="true"><i></i><i></i><i></i></div><button class="zoom" type="button"><img src="img/ic-call.jpg" loading="lazy" width="1400" height="875" alt="Call screen with Tara and question 1 of 3."></button></div><figcaption class="jcap">The call</figcaption></figure>
+        </li>
+        <li class="jstep" style="--c:var(--mint)">
+          <div class="jtext">
+            <h3>Answers out loud</h3>
+            <p>Speech becomes text, and nothing is scored until you confirm it.</p>
+            <div class="flow tight"><div class="st">Speak</div><span class="ar"></span><div class="st">Review transcript</div><span class="ar"></span><div class="st go">Confirm</div></div>
+          </div>
+        </li>
+        <li class="jstep" style="--c:var(--peach)">
+          <div class="jtext">
+            <h3>Tara probes, or moves on</h3>
+            <p>She decides from your answer, and makes the next question harder or easier.</p>
+          </div>
+          <figure class="jshot wide"><div class="browser sm"><div class="chrome" aria-hidden="true"><i></i><i></i><i></i></div><button class="zoom" type="button"><img src="img/ic-followup.jpg" loading="lazy" width="1400" height="875" alt="Tara asks a follow-up question."></button></div><figcaption class="jcap">A follow-up from Tara</figcaption></figure>
+        </li>
+        <li class="jstep" style="--c:var(--pink)">
+          <div class="jtext">
+            <h3>Gets a report in a minute</h3>
+            <p>A score, ranked answers, STAR gaps, and a better version of each answer.</p>
+          </div>
+          <figure class="jshot wide"><div class="browser sm"><div class="chrome" aria-hidden="true"><i></i><i></i><i></i></div><button class="zoom" type="button"><img src="img/ic-report-top.jpg" loading="lazy" width="1400" height="711" alt="Top of the report: score 76 and ranked answers with STAR strips."></button></div><figcaption class="jcap">The report, from a sample session</figcaption></figure>
+        </li>
+        <li class="jstep end" style="--c:var(--blue)">
+          <div class="jtext">
+            <h3>Practises the weakest answer</h3>
+            <p>One tap retries it. The next interview targets your weak spots.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="cs-sec" id="c-agents">
+      <div class="sec-head"><h2>How the AI works</h2>
+        <div class="story" data-id="US-C4" data-a="an" data-who="AI product lead" data-want="to see how the agents are designed" data-so="I can judge her grasp of agentic systems" data-done="Each agent has one job and a fallback"></div>
+        <p class="sec-sub">Four agents, each with one job and a fallback in code.</p></div>
+      <div class="agents" aria-label="Agent pipeline">
+        <div class="ag" style="--c:var(--lilac)"><small>Before the call</small><h3>Planner</h3><p>Picks 3 fresh questions.</p><span class="mdl">GPT-OSS 120B</span></div>
+        <span class="ag-ar" aria-hidden="true"></span>
+        <div class="ag main" style="--c:var(--sun)"><small>Each question</small><h3>Tara</h3><p>Probes, clarifies or moves on.</p><span class="mdl">GPT-OSS 20B</span></div>
+        <span class="ag-ar" aria-hidden="true"></span>
+        <div class="ag" style="--c:var(--mint)"><small>In the background</small><h3>Evaluator</h3><p>Scores each answer on STAR.</p><span class="mdl">GPT-OSS 120B</span></div>
+        <span class="ag-ar" aria-hidden="true"></span>
+        <div class="ag" style="--c:var(--pink)"><small>At the end</small><h3>Coach</h3><p>Re-checks scores, writes better answers.</p><span class="mdl">GPT-OSS 120B</span></div>
+      </div>
+      <details class="more-detail">
+        <summary>Under the hood</summary>
+        <div class="ag-rails">
+          <div><b>Speech</b>Whisper turns audio into text, keeping filler words</div>
+          <div><b>Memory</b>Weak areas and past questions, stored on the device</div>
+          <div><b>Stack</b>GitHub Pages, Cloudflare Workers and Groq</div>
+        </div>
+        <div class="table-scroll" style="margin-top:18px"><table class="ba prd-t">
+          <thead><tr><th scope="col">Agent</th><th scope="col">If the model fails</th></tr></thead>
+          <tbody>
+            <tr><td>Planner</td><td>Picks from a 33-question bank</td></tr>
+            <tr><td>Tara</td><td>A simple rule with at most one follow-up</td></tr>
+            <tr><td>Evaluator</td><td>Retries twice</td></tr>
+            <tr><td>Coach</td><td>Writes the focus area in code</td></tr>
+          </tbody>
+        </table></div>
+        <p class="note" style="margin-top:10px">Fast turns use the 20B model; judging uses 120B and falls back to 20B when busy. The Coach re-scores the Evaluator and adjusts only big disagreements.</p>
+      </details>
+    </section>
+
+    <section class="cs-sec" id="c-techniques">
+      <div class="sec-head"><h2>AI techniques used</h2>
+        <div class="story" data-id="US-C7" data-a="an" data-who="AI hiring manager" data-want="to see every AI technique she has actually used" data-so="I can match her to AI product roles" data-done="Every technique in the build is named|Grouped so it scans in seconds"></div>
+        <p class="sec-sub">36 techniques across 7 areas, all in the live code.</p></div>
+      <div class="kit kit3">
+        <div style="--c:var(--sun)"><h3><i></i>Agents</h3><div class="stickers"><span>Multi-agent system</span><span>Agentic loop (perceive, decide, act, observe)</span><span>Tool use / function calling</span><span>Goal-conditioned agent</span><span>Orchestration</span><span>Budgets and stopping criteria</span><span>Confidence-gated actions</span><span>Adaptive difficulty</span><span>Rule-based fallback policy</span></div></div>
+        <div style="--c:var(--mint)"><h3><i></i>LLMs</h3><div class="stickers"><span>Open-weight LLMs</span><span>Model routing / tiering</span><span>Model fallback chain</span><span>Reasoning models with effort control</span><span>Temperature control</span><span>Structured output (JSON)</span><span>Truncation recovery</span></div></div>
+        <div style="--c:var(--lilac)"><h3><i></i>Prompting</h3><div class="stickers"><span>Role prompting and personas</span><span>Rubric-based prompting</span><span>Few-shot output examples</span><span>Score calibration</span></div></div>
+        <div style="--c:var(--pink)"><h3><i></i>Evaluation</h3><div class="stickers"><span>LLM-as-a-judge</span><span>Critic / self-reflection</span><span>Hybrid scoring</span><span>Evidence grounding</span></div></div>
+        <div style="--c:var(--peach)"><h3><i></i>Memory</h3><div class="stickers"><span>Long-term user memory</span><span>Personalisation</span><span>Similarity-based deduplication</span></div></div>
+        <div style="--c:var(--sun)"><h3><i></i>Speech</h3><div class="stickers"><span>Automatic speech recognition (ASR)</span><span>Prompted ASR</span><span>Streaming ASR</span><span>Voice activity detection (VAD)</span><span>Hallucination filtering</span><span>Text-to-speech (TTS)</span></div></div>
+        <div style="--c:var(--mint)"><h3><i></i>Safety</h3><div class="stickers"><span>Prompt-injection defence</span><span>Hallucination guard on outputs</span><span>Human-in-the-loop</span></div></div>
+      </div>
+      <p class="metrics-line"><b>Left out by design:</b> <span>Fine-tuning</span><span>RAG</span><span>Training on user data</span></p>
+    </section>
+
+    <section class="cs-sec" id="c-decisions">
+      <div class="sec-head"><h2>Key decisions</h2>
+        <div class="story" data-id="US-C5" data-a="a" data-who="product lead" data-want="to know why it works the way it does" data-so="I can see the product judgement behind the AI" data-done="Each decision names the user reason"></div></div>
+      <div class="decisions">
+        <div class="dec" style="--c:var(--sun)"><h3>Hybrid scoring</h3><p>AI judges content. Code counts fillers and pace.</p></div>
+        <div class="dec" style="--c:var(--mint)"><h3>Review before scoring</h3><p>A misheard word never costs you points.</p></div>
+        <div class="dec" style="--c:var(--pink)"><h3>Three questions, not ten</h3><p>Short enough to finish, and repeat.</p></div>
+        <div class="dec" style="--c:var(--lilac)"><h3>One thing to fix</h3><p>One focus area, with a retry button.</p></div>
+      </div>
+    </section>
+
+    <section class="cs-sec" id="c-measure">
+      <div class="sec-head"><h2>At a glance</h2>
+        <div class="story" data-id="US-C6" data-a="a" data-who="hiring manager" data-want="to see how she'd judge whether it works" data-so="I know she thinks in outcomes" data-done="Success metrics are defined"></div></div>
+      <div class="stats">
+        <div class="stat" style="--c:var(--sun)"><span class="n">61</span><p>automated tests passing</p></div>
+        <div class="stat" style="--c:var(--mint)"><span class="n">4</span><p>AI agents</p></div>
+        <div class="stat" style="--c:var(--pink)"><span class="n">36</span><p>AI techniques</p></div>
+        <div class="stat" style="--c:var(--lilac)"><span class="n">~1 min</span><p>to a full report</p></div>
+      </div>
+      <p class="metrics-line"><b>What I track:</b> <span>Completion</span><span>Retries</span><span>Score change</span><span>Weekly return</span></p>
+    </section>
+
+    <div class="next-cs"><a class="btn" href="#work">Back to all work</a><a class="btn primary" href="#/dastaar">Next: DASTAAR</a></div>
+  </div>
 </main>
 
 <!-- ======================= DASTAAR CASE STUDY ======================= -->
@@ -763,155 +1004,111 @@ footer{padding:26px 0 40px;text-align:center;font-weight:600;color:var(--muted);
   <div class="wrap">
     <div class="cs-top">
       <a class="back" href="#work">Back to all work</a><br>
-      <div class="story" data-id="US-D0" data-a="a" data-who="hiring manager" data-want="the whole project in 30 seconds before I dive in" data-so="I know if it's worth reading on" data-done="Role, stage, reach and results are in one strip|The live site is one click away"></div>
+      <div class="story" data-id="US-D0" data-a="a" data-who="hiring manager" data-want="the whole project in 30 seconds" data-so="I know if it's worth reading on" data-done="Role, results and reach are in one strip|The live site is one click away"></div>
       <h1 class="cs-title" style="--c:#C9A45C">DASTAAR</h1>
-      <p class="cs-lede">Taking my family's 50-year-old turban house in Jalandhar online. I owned it end to end: research, product, design and build.</p>
+      <p class="cs-lede">My family's 50-year-old turban shop in Jalandhar, taken online. I owned it end to end.</p>
       <figure class="browser" style="margin-left:0;margin-right:0">
         <div class="chrome" aria-hidden="true"><i></i><i></i><i></i><span>tehalsinghandsons.com</span></div>
-        <img src="img/desktop-hero.jpg" width="1080" height="624" alt="The DASTAAR homepage: a group of men in colourful turbans under the DASTAAR by Tehal Singh &amp; Sons logo, with a 'hand-finished in Jalandhar' tag.">
+        <img src="img/desktop-hero.jpg" width="1080" height="624" alt="The DASTAAR homepage: men in colourful turbans under the DASTAAR logo.">
       </figure>
       <div class="glance">
         <div><b>My role</b><span>Product, design and build</span></div>
         <div><b>Stage</b><span>Live, 100+ orders</span></div>
         <div><b>Users</b><span>Buyers in India and abroad</span></div>
-        <div><b>Shipped to</b><span>India, Canada, USA, Australia</span></div>
+        <div><b>Shipped to</b><span>4 countries</span></div>
       </div>
-      <div class="cta-row" style="margin-bottom:22px"><a class="btn primary" href="https://tehalsinghandsons.com/" target="_blank" rel="noopener">Visit the live site</a></div>
-      <div class="toc"><a href="#d-problem">Problem</a><a href="#d-users">Users</a><a href="#d-journey">Customer journey</a><a href="#d-ux">UX decisions</a><a href="#d-impact">Impact</a></div>
+      <div class="cta-row"><a class="btn primary" href="https://tehalsinghandsons.com/" target="_blank" rel="noopener">Visit the live site</a></div>
     </div>
 
     <section class="cs-sec" id="d-problem">
       <div class="sec-head"><h2>The problem</h2>
-        <div class="story" data-id="US-D1" data-a="a" data-who="customer who can't visit Jalandhar" data-want="to buy from a turban house I trust without being there" data-so="I get the right turban wherever I live" data-done="The problem is framed from the customer side|Constraints are stated up front"></div></div>
+        <div class="story" data-id="US-D1" data-a="a" data-who="customer who can't visit Jalandhar" data-want="to buy from a turban house I trust" data-so="I get the right turban wherever I live" data-done="The problem is framed from the customer side"></div></div>
       <div class="two">
         <div class="prose">
-          <p>Tehal Singh &amp; Sons Pagri House has sold turbans in Jalandhar since 1973, trusted by families across Punjab and abroad. But everything happened over the counter: if you couldn't walk in, you couldn't buy.</p>
-          <p>Customers in other cities or abroad had to ask relatives to shop for them and guess colours over a phone call.</p>
-          <div class="hmw"><small>How might we</small>let anyone, anywhere, buy the exact turban they want from a shop in Jalandhar?</div>
+          <p>The shop has sold turbans since 1973, but only over the counter. If you couldn't visit, you couldn't buy.</p>
+          <div class="hmw"><small>How might we</small>let anyone, anywhere, buy the exact turban they want?</div>
         </div>
-        <div class="box"><h3>Constraints I worked with</h3><ul><li>Colour is the product, and screens distort colour</li><li>Turbans are sold by the metre, so the price depends on fabric, length and stitching</li><li>Many buyers live abroad, far from the shop</li><li>A new online name has to borrow 50 years of trust</li></ul></div>
+        <div class="box"><h3>What made it hard</h3><ul><li>Colour is the product, and screens distort it</li><li>Turbans are sold by the metre</li><li>A new site has to earn 50 years of trust</li></ul></div>
       </div>
     </section>
 
     <section class="cs-sec" id="d-users">
       <div class="sec-head"><h2>Who it's for</h2>
-        <div class="story" data-id="US-D2" data-a="a" data-who="reviewer" data-want="to see which customers the site was designed around" data-so="I can check the design decisions against real needs" data-done="Each persona has one clear need|Each need maps to a real feature"></div></div>
+        <div class="story" data-id="US-D2" data-a="a" data-who="reviewer" data-want="to see which customers the site was designed around" data-so="I can check the decisions against real needs" data-done="Each persona has a goal, a frustration and a habit|Each persona maps to a real feature"></div>
+        <p class="sec-sub">Four people the site had to work for. Each one shaped a feature.</p></div>
       <div class="personas">
-        <div class="persona"><div class="face" style="--c:var(--peach)">G</div><h3>The regular</h3><p class="meta">Lives near Jalandhar, buys every few months</p><p>Knows his shade and wants it without the trip.</p><p class="needs">Gets: shop by colour and bestsellers</p></div>
-        <div class="persona"><div class="face" style="--c:var(--mint)">M</div><h3>The customer abroad</h3><p class="meta">Grew up in Punjab, lives in Canada</p><p>Trusts the shop but can't reach it.</p><p class="needs">Gets: worldwide delivery and a country code at checkout</p></div>
-        <div class="persona"><div class="face" style="--c:var(--pink)">P</div><h3>The gift giver</h3><p class="meta">A sister sending a gift for Rakhi</p><p>Wants a gift that arrives ready to give.</p><p class="needs">Gets: Rakhi gift boxes and gift wrap</p></div>
-        <div class="persona"><div class="face" style="--c:var(--lilac)">H</div><h3>The occasion buyer</h3><p class="meta">Shopping for a wedding or festival</p><p>Knows the event, not the shade.</p><p class="needs">Gets: shop by occasion</p></div>
+        <div class="persona"><div class="face" style="--c:var(--peach)">G</div><h3>Gurpreet, 52</h3><p class="meta">The regular · Jalandhar</p>
+          <dl class="pdl"><dt>Wants</dt><dd>His usual shade again, without a trip to the shop.</dd><dt>Frustration</dt><dd>Online photos never match the colour he knows.</dd><dt>How he shops</dt><dd>Asks for a shade by name, not a product code.</dd></dl>
+          <p class="needs">Gets: shop by colour</p></div>
+        <div class="persona"><div class="face" style="--c:var(--mint)">M</div><h3>Manpreet, 31</h3><p class="meta">The buyer abroad · Canada</p>
+          <dl class="pdl"><dt>Wants</dt><dd>Real Punjab fabric, not a local reseller's stock.</dd><dt>Frustration</dt><dd>Can't touch the fabric or check the length before paying.</dd><dt>How he shops</dt><dd>On his phone, often for family back home too.</dd></dl>
+          <p class="needs">Gets: worldwide delivery and a live price by the metre</p></div>
+        <div class="persona"><div class="face" style="--c:var(--pink)">P</div><h3>Priya, 26</h3><p class="meta">The gift giver · Delhi</p>
+          <dl class="pdl"><dt>Wants</dt><dd>A ready Rakhi gift for her brother.</dd><dt>Frustration</dt><dd>Doesn't know fabrics or lengths; afraid of picking wrong.</dd><dt>How she shops</dt><dd>Seasonal, last-minute, wants it boxed.</dd></dl>
+          <p class="needs">Gets: Rakhi gift boxes</p></div>
+        <div class="persona"><div class="face" style="--c:var(--lilac)">H</div><h3>Harjot, 24</h3><p class="meta">The occasion buyer · Ludhiana</p>
+          <dl class="pdl"><dt>Wants</dt><dd>The right turban for a wedding or Gurpurab.</dd><dt>Frustration</dt><dd>Unsure which shade suits the event.</dd><dt>How he shops</dt><dd>Starts from the event, then picks a colour.</dd></dl>
+          <p class="needs">Gets: shop by occasion</p></div>
       </div>
     </section>
 
     <section class="cs-sec" id="d-journey">
       <div class="sec-head"><h2>Customer journey</h2>
-        <div class="story" data-id="US-D3" data-a="a" data-who="turban buyer" data-want="more than one way to find my turban" data-so="I can start from what I already know: a shade, an occasion or a gift" data-done="Every way in leads to the same product page|Optional steps never block checkout|Every step is live on the site"></div>
-        <p class="sec-sub">Every path a shopper can take on DASTAAR, from landing to delivery. Tap any screen to enlarge it.</p></div>
-
+        <div class="story" data-id="US-D3" data-a="a" data-who="turban buyer" data-want="more than one way to find my turban" data-so="I can start from what I already know" data-done="Every way in leads to the same product page"></div>
+        <p class="sec-sub">Real screens from the live site. Tap any to enlarge.</p></div>
       <ol class="jmap">
         <li class="jstep" style="--c:var(--lilac)">
-          <div class="jtext">
-            <h3>Lands on the home page</h3>
-            <p>He arrives from a link a relative shared, or from search. Before he scrolls, he sees the heritage and the promise: find your colour, find your turban.</p>
-            <div class="chips"><span>Est. 1973</span><span>Worldwide delivery</span><span>Shop turbans</span><span>Explore colours</span></div>
-            <p class="detour"><b>Not sure yet?</b> He can read the shop's story (50+ years, 12+ colours, same hands, same craft), then go back to shopping.</p>
-          </div>
-          <figure class="jshot"><div class="phone real sm"><button class="scr zoom" type="button"><img src="img/home-hero.jpg" loading="lazy" width="540" height="1043" alt="Home page: DASTAAR by Tehal Singh &amp; Sons, est. 1973. Find your colour, find your turban. Buttons: Shop turbans, Explore colours."></button></div><figcaption class="jcap">Home page</figcaption></figure>
+          <div class="jtext"><h3>Lands on the home page</h3><p>Heritage and the promise, before any scroll.</p></div>
+          <figure class="jshot"><div class="phone real sm"><button class="scr zoom" type="button"><img src="img/home-hero.jpg" loading="lazy" width="540" height="1043" alt="Home page: DASTAAR, est. 1973. Find your colour, find your turban."></button></div><figcaption class="jcap">Home page</figcaption></figure>
         </li>
-
         <li class="jstep branch" style="--c:var(--sun)">
-          <div class="jtext">
-            <h3>Picks a way in</h3>
-            <p>Five ways in, all leading to the same product page. He starts from whatever he already knows.</p>
-          </div>
+          <div class="jtext"><h3>Picks a way in</h3><p>Five ways in, one product page.</p></div>
           <div class="fan">
-            <figure class="way" style="--pos:top"><button class="way-img zoom" type="button"><img src="img/listing-filter.jpg" loading="lazy" width="540" height="1128" alt="Listing filtered to Colour: Orange, showing Saffron and Apricot turbans at ₹90 per metre."></button><figcaption><b>By colour</b>He knows his shade. He picks a swatch, then narrows it down with a colour filter.</figcaption></figure>
-            <figure class="way" style="--pos:top"><button class="way-img zoom" type="button"><img src="img/home-occasion.jpg" loading="lazy" width="540" height="1043" alt="Shop by Occasion: Weddings, Everyday, Festive and Formal."></button><figcaption><b>By occasion</b>He knows the event, not the shade: weddings, everyday, festive or formal.</figcaption></figure>
-            <figure class="way" style="--pos:center 62%"><button class="way-img zoom" type="button"><img src="img/home-bestsellers.jpg" loading="lazy" width="540" height="1128" alt="Bestselling Turbans: Cobalt Blue and Emerald Green from ₹90 per metre."></button><figcaption><b>Bestsellers</b>He wants what most people buy, so he starts from the top shades.</figcaption></figure>
-            <figure class="way" style="--pos:top"><button class="way-img zoom" type="button"><img src="img/home-rakhi.jpg" loading="lazy" width="540" height="1128" alt="Rakhi campaign: Gift him the pride. Shop Rakhi gift boxes or Build your box."></button><figcaption><b>Gift box</b>A sister shopping for Rakhi picks a ready gift box or builds her own.</figcaption></figure>
-            <figure class="way" style="--pos:top"><button class="way-img zoom" type="button"><img src="img/home-categories.jpg" loading="lazy" width="540" height="1043" alt="Category tiles: Turbans, Rakhi Gift Boxes, Patkas, Accessories."></button><figcaption><b>By category</b>He's after something else: turbans, patkas or accessories.</figcaption></figure>
+            <figure class="way" style="--pos:top"><button class="way-img zoom" type="button"><img src="img/listing-filter.jpg" loading="lazy" width="540" height="1128" alt="Listing filtered by colour."></button><figcaption><b>By colour</b></figcaption></figure>
+            <figure class="way" style="--pos:top"><button class="way-img zoom" type="button"><img src="img/home-occasion.jpg" loading="lazy" width="540" height="1043" alt="Shop by occasion."></button><figcaption><b>By occasion</b></figcaption></figure>
+            <figure class="way" style="--pos:center 62%"><button class="way-img zoom" type="button"><img src="img/home-bestsellers.jpg" loading="lazy" width="540" height="1128" alt="Bestselling turbans."></button><figcaption><b>Bestsellers</b></figcaption></figure>
+            <figure class="way" style="--pos:top"><button class="way-img zoom" type="button"><img src="img/home-rakhi.jpg" loading="lazy" width="540" height="1128" alt="Rakhi gift boxes."></button><figcaption><b>Gift box</b></figcaption></figure>
+            <figure class="way" style="--pos:top"><button class="way-img zoom" type="button"><img src="img/home-categories.jpg" loading="lazy" width="540" height="1043" alt="Category tiles."></button><figcaption><b>By category</b></figcaption></figure>
           </div>
-          <p class="merge">All five lead to the product page</p>
         </li>
-
         <li class="jstep" style="--c:var(--mint)">
-          <div class="jtext">
-            <h3>Builds his turban</h3>
-            <p>He makes the choices a shopkeeper would ask about at the counter, one at a time. Turbans sell by the metre, so the price updates with every choice.</p>
-            <div class="optrow"><b>Fabric</b><div class="chips"><span>Full Voile, ₹95/m</span><span>Rubia, ₹90/m</span></div></div>
-            <div class="optrow"><b>Length</b><div class="chips"><span>5 m</span><span>5.5 m</span><span>6 m</span><span>6.5 m</span><span>7 m</span></div></div>
-            <div class="optrow"><b>Stitching</b><div class="chips"><span>No stitch</span><span>Stitched, +₹100</span></div></div>
-            <p class="detour"><b>Live total on the Add button:</b> ₹95 × 5.5 m = ₹522.5</p>
-          </div>
-          <figure class="jshot"><div class="phone real sm"><button class="scr zoom" type="button"><img src="img/pdp-configure.jpg" loading="lazy" width="540" height="1128" alt="Product options: colour, fabric (Full Voile or Rubia), length from 5 to 7 metres, and stitching."></button></div><figcaption class="jcap">Product page</figcaption></figure>
+          <div class="jtext"><h3>Builds his turban</h3><p>Fabric, length and stitching. The price updates as he picks.</p>
+            <div class="chips"><span>₹95 × 5.5 m = ₹522.5</span></div></div>
+          <figure class="jshot"><div class="phone real sm"><button class="scr zoom" type="button"><img src="img/pdp-configure.jpg" loading="lazy" width="540" height="1128" alt="Product options: colour, fabric, length and stitching."></button></div><figcaption class="jcap">Product page</figcaption></figure>
         </li>
-
-        <li class="jstep" style="--c:var(--peach)">
-          <div class="jtext">
-            <h3>Adds finishing touches <small>(optional)</small></h3>
-            <p>Small extras he'd buy anyway, one tick each. He can skip them without slowing down.</p>
-            <div class="chips"><span>Silai safety pins, +₹50</span><span>Pagg pin, +₹50</span><span>Gift box, +₹200</span></div>
-            <p class="detour"><b>Or keeps browsing:</b> "More in blue" suggests other shades from the same colour family.</p>
-          </div>
-        </li>
-
         <li class="jstep" style="--c:var(--pink)">
-          <div class="jtext">
-            <h3>Checks out</h3>
-            <p>A slide-out cart, then a two-step checkout. He confirms who he is before he enters an address, and picks his country code if he lives abroad.</p>
-            <div class="flow tight"><div class="st">Cart<small>live subtotal</small></div><span class="ar"></span><div class="st">Confirm it's you<small>email and WhatsApp</small></div><span class="ar"></span><div class="st">Shipping details<small>unlocked</small></div><span class="ar"></span><div class="st go">Place order</div></div>
-          </div>
-          <figure class="jshot"><div class="phone real sm"><button class="scr zoom" type="button"><img src="img/checkout-verify.jpg" loading="lazy" width="540" height="1043" alt="Checkout: Almost there. Our team will call you to confirm your order and payment before we dispatch. Step 1: Confirm it's you."></button></div><figcaption class="jcap">Checkout</figcaption></figure>
+          <div class="jtext"><h3>Checks out</h3><p>Verifies email and WhatsApp, then adds the address.</p></div>
+          <figure class="jshot"><div class="phone real sm"><button class="scr zoom" type="button"><img src="img/checkout-verify.jpg" loading="lazy" width="540" height="1043" alt="Checkout: confirm it's you with email and WhatsApp."></button></div><figcaption class="jcap">Checkout</figcaption></figure>
         </li>
-
         <li class="jstep end" style="--c:var(--blue)">
-          <div class="jtext">
-            <h3>Gets a call, then his turban</h3>
-            <p>The team calls to confirm the order and payment, then ships it from Jalandhar. So far that's 100+ orders to four countries.</p>
-            <div class="chips"><span>India</span><span>Canada</span><span>USA</span><span>Australia</span></div>
-          </div>
+          <div class="jtext"><h3>Gets his turban</h3><p>Shipped from Jalandhar to India, Canada, the USA or Australia.</p></div>
         </li>
       </ol>
     </section>
 
-<section class="cs-sec" id="d-ux">
-      <div class="sec-head"><h2>UX decisions</h2>
-        <div class="story" data-id="US-D4" data-a="a" data-who="product lead" data-want="to know the reasoning behind the key choices" data-so="I can see she designs from user behaviour, not taste" data-done="Each decision names the user reason|Each decision points to a journey step"></div>
-        <p class="sec-sub">The six calls that shaped the site, and why I made them.</p></div>
+    <section class="cs-sec" id="d-ux">
+      <div class="sec-head"><h2>Key decisions</h2>
+        <div class="story" data-id="US-D4" data-a="a" data-who="product lead" data-want="to know the reasoning behind the key choices" data-so="I can see she designs from user behaviour" data-done="Each decision names the user reason"></div></div>
       <div class="decisions">
-        <div class="dec" style="--c:var(--sun)"><h3>Colour is the menu</h3><p>People ask for a shade, not a product code. So colour drives the home page, the filters and the recommendations.</p><span>In the journey: steps 2 and 4</span></div>
-        <div class="dec" style="--c:var(--mint)"><h3>A price that builds itself</h3><p>Turbans are sold by the metre. The page multiplies rate by length and adds stitching, live: ₹95 × 5.5 m = ₹522.5.</p><span>In the journey: step 3</span></div>
-        <div class="dec" style="--c:var(--pink)"><h3>Verify, then call</h3><p>First-time online buyers trust a person. WhatsApp verification plus a confirmation call keeps fake orders out and gives buyers a human touch.</p><span>In the journey: steps 5 and 6</span></div>
-        <div class="dec" style="--c:var(--lilac)"><h3>Heritage above the fold</h3><p>A new website has no reviews. The shop's 50 years, real photos and "hand-finished in Jalandhar" do that job instead.</p><span>In the journey: step 1</span></div>
-        <div class="dec" style="--c:var(--peach)"><h3>Grow the basket gently</h3><p>Pins and gift wrap are things buyers already need. One tick each, shown after the turban is built.</p><span>In the journey: step 4</span></div>
-        <div class="dec" style="--c:var(--sun)"><h3>Sell the season</h3><p>Festivals drive turban gifting. The Rakhi campaign takes the top of the home page, with ready boxes or a build-your-own option.</p><span>In the journey: step 2</span></div>
+        <div class="dec" style="--c:var(--sun)"><h3>Colour is the menu</h3><p>People ask for a shade, not a product code.</p></div>
+        <div class="dec" style="--c:var(--mint)"><h3>A price that builds itself</h3><p>Rate × length + stitching, live.</p></div>
+        <div class="dec" style="--c:var(--lilac)"><h3>Heritage up front</h3><p>A new site has no reviews; 50 years does that job.</p></div>
+        <div class="dec" style="--c:var(--peach)"><h3>Sell the season</h3><p>Rakhi gift boxes lead the home page.</p></div>
       </div>
     </section>
 
     <section class="cs-sec" id="d-impact">
       <div class="sec-head"><h2>Impact</h2>
-        <div class="story" data-id="US-D5" data-a="a" data-who="hiring manager" data-want="to see what changed for the business" data-so="I know the project delivered, not just launched" data-done="Before and after are compared|100+ orders and reach are measured"></div></div>
+        <div class="story" data-id="US-D5" data-a="a" data-who="hiring manager" data-want="to see what changed for the business" data-so="I know the project delivered" data-done="100+ orders and reach are measured"></div></div>
       <div class="stats">
-        <div class="stat" style="--c:var(--sun)"><span class="n">100+</span><p>orders placed through the site</p></div>
-        <div class="stat" style="--c:var(--mint)"><span class="n">4</span><p>countries shipped to: India, Canada, USA and Australia</p></div>
-        <div class="stat" style="--c:var(--pink)"><span class="n">12+</span><p>colours, 2 fabrics and 5 lengths, all buyable online</p></div>
-        <div class="stat" style="--c:var(--lilac)"><span class="n">1973</span><p>a counter-only shop, now open to the world</p></div>
+        <div class="stat" style="--c:var(--sun)"><span class="n">100+</span><p>orders</p></div>
+        <div class="stat" style="--c:var(--mint)"><span class="n">4</span><p>countries shipped to</p></div>
+        <div class="stat" style="--c:var(--pink)"><span class="n">12+</span><p>colours online</p></div>
+        <div class="stat" style="--c:var(--lilac)"><span class="n">1973</span><p>a counter-only shop, now global</p></div>
       </div>
-      <table class="ba" style="margin-top:28px">
-        <thead><tr><th scope="col"></th><th scope="col">Before</th><th scope="col">After DASTAAR</th></tr></thead>
-        <tbody>
-          <tr><td>Where you can buy</td><td>At the counter in Jalandhar</td><td>Online: 100+ orders shipped to 4 countries</td></tr>
-          <tr><td>How you choose</td><td>In person or over the phone</td><td>By colour, occasion or bestseller</td></tr>
-          <tr><td>How price works</td><td>Worked out at the counter</td><td>Live price per metre on every page</td></tr>
-          <tr><td>Gifting</td><td>Wrap it yourself</td><td>Ready Rakhi boxes and gift wrap</td></tr>
-          <tr><td>Brand</td><td>A name on the shop sign</td><td>DASTAAR, a brand and a live store</td></tr>
-        </tbody>
-      </table>
-      <div class="box" style="margin-top:28px"><h3>What I learned</h3><ul><li>Launching fast means ruthless scope: launch the catalogue first, add campaigns and add-ons after</li><li>For a family business, trust is the product, so heritage goes above the fold</li><li>Match how people already buy: by colour, by the metre, with a phone call to close</li></ul></div>
     </section>
 
-    <div class="next-cs"><a class="btn" href="#work">Back to all work</a><a class="btn primary" href="#/explore">Next: Explore page</a></div>
+    <div class="next-cs"><a class="btn" href="#/coach">Previous: AI Interview Coach</a><a class="btn primary" href="#/explore">Next: Explore page</a></div>
   </div>
 </main>
 
@@ -926,92 +1123,65 @@ footer{padding:26px 0 40px;text-align:center;font-weight:600;color:var(--muted);
   <div class="wrap">
     <div class="cs-top">
       <a class="back" href="#work">Back to all work</a><br>
-      <div class="story" data-id="US-E0" data-a="a" data-who="hiring manager" data-want="the whole project in 30 seconds before I dive in" data-so="I know if it's worth reading on" data-done="Role, timeline, team and research are in one strip"></div>
+      <div class="story" data-id="US-E0" data-a="a" data-who="hiring manager" data-want="the whole project in 30 seconds" data-so="I know if it's worth reading on" data-done="Role, timeline and research are in one strip"></div>
       <h1 class="cs-title" style="--c:var(--sun)">The Explore page</h1>
-      <p class="cs-lede">A top consumer lending firm's app had 52M+ users who opened it to pay an EMI and left. I designed a page to make them stay and discover.</p>
+      <p class="cs-lede">A top consumer lending firm's app had 52M+ users who paid their EMI and left. I designed a page to make them stay.</p>
       <div class="glance">
-        <div><b>My role</b><span>Product Management Intern, Digital Platforms</span></div>
+        <div><b>My role</b><span>Product Management Intern</span></div>
         <div><b>Timeline</b><span>Apr to Jun 2025</span></div>
-        <div><b>Team</b><span>Product, design, tech, marketing, SEO</span></div>
+        <div><b>Team</b><span>Product, design, tech, marketing</span></div>
         <div><b>Research</b><span>27 interviews, 94 surveys</span></div>
       </div>
-      <div class="toc"><a href="#e-problem">Problem</a><a href="#e-research">Research</a><a href="#e-users">Users</a><a href="#e-journey">Journey</a><a href="#e-pages">Pages</a><a href="#e-flows">Flows</a><a href="#e-impact">Impact</a></div>
     </div>
 
     <section class="cs-sec" id="e-problem">
       <div class="sec-head"><h2>The problem</h2>
-        <div class="story" data-id="US-E1" data-a="a" data-who="lending app user" data-want="to find out what else the app can do for me without hunting" data-so="I get more value from an app I already have" data-done="The user gap and the business gap are both stated"></div></div>
+        <div class="story" data-id="US-E1" data-a="a" data-who="lending app user" data-want="to find out what else the app can do for me" data-so="I get more value from an app I already have" data-done="The user gap and the business gap are both stated"></div></div>
       <div class="two">
         <div class="prose">
-          <p>The app gives one-touch access to 50+ financial products. But most users only touched the one product they already had: pay the EMI, check the loan, close the app.</p>
-          <p>Business saw a super app. Users saw a service app. That gap meant missed cross-sell, under-used products and a purely transactional experience, while rivals were turning into super apps.</p>
-          <div class="hmw"><small>How might we</small>turn the app from a place to pay EMIs into a place users come back to discover?</div>
+          <p>The app offers 50+ financial products, but most users only paid their EMI and closed it. The business saw a super app; users saw a service app.</p>
+          <div class="hmw"><small>How might we</small>turn a place to pay EMIs into a place to discover?</div>
         </div>
-        <div class="box"><h3>Goals I set</h3><ul><li>Raise product discovery with one central hub</li><li>Raise engagement with personalised, bite-sized content</li><li>Keep it calm: no clutter, no endless scroll</li><li>Protect business KPIs like cross-sell while doing it</li></ul></div>
+        <div class="box"><h3>Goals</h3><ul><li>More product discovery</li><li>More engagement, without clutter</li><li>Protect cross-sell</li></ul></div>
       </div>
     </section>
 
     <section class="cs-sec" id="e-research">
-      <div class="sec-head"><h2>Research</h2>
-        <div class="story" data-id="US-E2" data-a="a" data-who="product lead" data-want="to see how the insights were gathered" data-so="I can trust the design decisions built on them" data-done="Methods and sample sizes are stated|Competitor learnings map to features"></div>
-        <p class="sec-sub">I used the Double Diamond to move from open research to a focused design.</p></div>
-      <div class="diamond">
-        <div style="--c:var(--lilac)"><b>Discover</b><span>27 interviews in branches, electronics stores and on the phone; 94 surveys</span></div>
-        <div style="--c:var(--peach)"><b>Define</b><span>Affinity mapping into pain points and problem statements</span></div>
-        <div style="--c:var(--mint)"><b>Develop</b><span>Feature ideas and wireframes, tested with users and 8+ business owners</span></div>
-        <div style="--c:var(--pink)"><b>Deliver</b><span>Final page structure and a 5-phase roadmap</span></div>
-      </div>
-      <h3 class="flow-title" style="margin-bottom:14px">What I borrowed from 6 competitors</h3>
-      <div class="bench">
-        <div><b>Paytm</b><p>Personalised explore tiles. <em>Became: personalised highlights.</em></p></div>
-        <div><b>PhonePe</b><p>Every category in one clean view. <em>Became: the Explore products grid.</em></p></div>
-        <div><b>IDFC First</b><p>Every journey in 3 steps. <em>Became: "3 easy steps to avail".</em></p></div>
-        <div><b>ICICI iMobile</b><p>A What's New carousel. <em>Became: the "Just launched" hero.</em></p></div>
-        <div><b>PayU</b><p>Short demo videos. <em>Became: the quick video card.</em></p></div>
-        <div><b>Bank of Baroda</b><p>Plain-language banners. <em>Became: simple copy everywhere.</em></p></div>
-      </div>
-      <h3 class="flow-title" style="margin:34px 0 14px">What the data said</h3>
+      <div class="sec-head"><h2>What the research said</h2>
+        <div class="story" data-id="US-E2" data-a="a" data-who="product lead" data-want="to see the insights behind the design" data-so="I can trust the decisions built on them" data-done="Each insight leads to a design choice"></div></div>
       <div class="stats">
-        <div class="stat" style="--c:var(--sun)"><span class="n">62%</span><p>first found the app through an agent, not on their own</p><span class="so">So: the app must teach users what it offers</span></div>
-        <div class="stat" style="--c:var(--pink)"><span class="n">59%</span><p>don't scroll past the top of app pages</p><span class="so">So: the entry point goes above the fold</span></div>
-        <div class="stat" style="--c:var(--mint)"><span class="n">55%</span><p>explore new features only occasionally; 23% rarely or never</p><span class="so">So: nudges and a What's New section</span></div>
-        <div class="stat" style="--c:var(--lilac)"><span class="n">#1</span><p>pain point: too many irrelevant alerts</p><span class="so">So: fewer, personalised updates in one place</span></div>
+        <div class="stat" style="--c:var(--sun)"><span class="n">62%</span><p>came through an agent, not on their own</p><span class="so">So: teach what the app offers</span></div>
+        <div class="stat" style="--c:var(--pink)"><span class="n">59%</span><p>never scroll past the top</p><span class="so">So: entry point above the fold</span></div>
+        <div class="stat" style="--c:var(--mint)"><span class="n">78%</span><p>explore new features occasionally or never</p><span class="so">So: nudges and a What's New</span></div>
+        <div class="stat" style="--c:var(--lilac)"><span class="n">#1</span><p>pain: irrelevant alerts</p><span class="so">So: fewer, personal updates</span></div>
       </div>
-      <div class="quotes">
-        <div class="quote">"I only use this app for paying EMIs or to check loan status. I had no idea it offered mutual funds or insurance."</div>
-        <div class="quote">"There is too much information scattered through the app. I'd only explore if it was obvious or simple."</div>
-      </div>
+      <p class="metrics-line" style="margin-top:20px"><b>Benchmarked:</b> <span>Paytm</span><span>PhonePe</span><span>IDFC First</span><span>ICICI iMobile</span><span>PayU</span><span>Bank of Baroda</span></p>
     </section>
 
     <section class="cs-sec" id="e-users">
       <div class="sec-head"><h2>Who it's for</h2>
-        <div class="story" data-id="US-E3" data-a="a" data-who="designer on the team" data-want="personas grounded in real segments" data-so="each section of the page serves someone specific" data-done="Personas follow socio-economic segments|Each persona maps to a feature"></div>
-        <p class="sec-sub">Four personas built on socio-economic segments (SEC) from the survey and interviews.</p></div>
+        <div class="story" data-id="US-E3" data-a="a" data-who="designer on the team" data-want="personas grounded in real segments" data-so="each section of the page serves someone specific" data-done="Each persona has a goal, a frustration and a habit|Each persona maps to a feature"></div>
+        <p class="sec-sub">Four personas from the interviews and surveys, one per socio-economic segment (SEC).</p></div>
       <div class="personas">
-        <div class="persona"><div class="face" style="--c:var(--lilac)">A</div><h3>Ananya, 34</h3><p class="meta">SEC A: IT professional, flagship phone, ₹1–2L a month</p><p>Tries new features early. Wants offers that feel made for her.</p><p class="needs">Gets: "Just launched" and personalised highlights</p></div>
-        <div class="persona"><div class="face" style="--c:var(--sun)">R</div><h3>Rohit, 29</h3><p class="meta">SEC B: sales, mid-range phone, ₹25–50k a month</p><p>Moves when there's a deal. Ignores generic banners.</p><p class="needs">Gets: deals for you and timely nudges</p></div>
-        <div class="persona"><div class="face" style="--c:var(--mint)">S</div><h3>Suresh, 33</h3><p class="meta">SEC C: driver, low to mid-range phone, ₹10–25k a month</p><p>Needs to understand a product before he trusts it.</p><p class="needs">Gets: quick videos and 3-step explainers</p></div>
-        <div class="persona"><div class="face" style="--c:var(--peach)">R</div><h3>Ramesh, 48</h3><p class="meta">SEC D/E: daily wage, basic phone, under ₹10k</p><p>Uses the app for one thing. Too many options scare him off.</p><p class="needs">Gets: few, simple choices at the top</p></div>
+        <div class="persona"><div class="face" style="--c:var(--lilac)">A</div><h3>Ananya, 34</h3><p class="meta">SEC A · IT professional · flagship phone · ₹1–2L a month</p>
+          <dl class="pdl"><dt>Wants</dt><dd>Offers that feel picked for her, not mass banners.</dd><dt>Frustration</dt><dd>Has to dig through menus to find what's new.</dd><dt>How she uses the app</dt><dd>Tries new features early; opens the app a few times a month.</dd></dl>
+          <p class="needs">Gets: "Just launched" and personal highlights</p></div>
+        <div class="persona"><div class="face" style="--c:var(--sun)">R</div><h3>Rohit, 29</h3><p class="meta">SEC B · sales executive · mid-range phone · ₹25–50k a month</p>
+          <dl class="pdl"><dt>Wants</dt><dd>A good deal on the next phone or appliance.</dd><dt>Frustration</dt><dd>Too many irrelevant alerts, so he ignores them all.</dd><dt>How he uses the app</dt><dd>Moves only when there's a deal; pays his EMI and leaves.</dd></dl>
+          <p class="needs">Gets: offers for you and well-timed nudges</p></div>
+        <div class="persona"><div class="face" style="--c:var(--mint)">S</div><h3>Suresh, 33</h3><p class="meta">SEC C · driver · low to mid-range phone · ₹10–25k a month</p>
+          <dl class="pdl"><dt>Wants</dt><dd>To understand a product before trusting it with money.</dd><dt>Frustration</dt><dd>Products feel complex; no one explains them simply.</dd><dt>How he uses the app</dt><dd>Learns from short videos; signed up through an agent at a store.</dd></dl>
+          <p class="needs">Gets: 40-second videos and 3-step summaries</p></div>
+        <div class="persona"><div class="face" style="--c:var(--peach)">R</div><h3>Ramesh, 48</h3><p class="meta">SEC D/E · daily wage worker · basic phone · under ₹10k a month</p>
+          <dl class="pdl"><dt>Wants</dt><dd>To pay his EMI quickly and safely.</dd><dt>Frustration</dt><dd>Too many options make him nervous he'll tap the wrong thing.</dd><dt>How he uses the app</dt><dd>Uses the app for one thing only, rarely scrolls.</dd></dl>
+          <p class="needs">Gets: few, simple choices at the top</p></div>
       </div>
     </section>
 
-    <section class="cs-sec" id="e-journey">
-      <div class="sec-head"><h2>Customer journey</h2>
-        <div class="story" data-id="US-E4" data-a="a" data-who="product reviewer" data-want="to see where users drop off today" data-so="I understand where the Explore page steps in" data-done="Each stage shows behaviour, pain and opportunity"></div>
-        <p class="sec-sub">How a typical user moves through the app today, and where Explore steps in. Scroll sideways on mobile.</p></div>
-      <div class="scroller"><div class="journey">
-        <div class="stage" style="--c:var(--lilac)"><h3>Onboarded</h3><div class="feel" aria-label="neutral">😐</div><dl><dt>User</dt><dd>Gets a loan at a store; an agent installs the app</dd><dt>Pain</dt><dd>Sees it as a service app from day one</dd><dt>Opportunity</dt><dd class="fix">Show what else the app does, early</dd></dl></div>
-        <div class="stage" style="--c:var(--peach)"><h3>Pays EMI</h3><div class="feel" aria-label="bored">😑</div><dl><dt>User</dt><dd>Opens the app once a month to pay</dd><dt>Pain</dt><dd>Never scrolls past the top</dd><dt>Opportunity</dt><dd class="fix">A nudge above the fold, next to the EMI card</dd></dl></div>
-        <div class="stage" style="--c:var(--sun)"><h3>Ignores offers</h3><div class="feel" aria-label="annoyed">😒</div><dl><dt>User</dt><dd>Swipes past banners and alerts</dd><dt>Pain</dt><dd>Too many irrelevant alerts</dd><dt>Opportunity</dt><dd class="fix">Fewer updates, personalised, in one place</dd></dl></div>
-        <div class="stage" style="--c:var(--mint)"><h3>Misses value</h3><div class="feel" aria-label="unaware">😶</div><dl><dt>User</dt><dd>Never learns about insurance, investing or UPI</dd><dt>Pain</dt><dd>Features are scattered and complex</dd><dt>Opportunity</dt><dd class="fix">Explore by category, explained in 3 steps</dd></dl></div>
-        <div class="stage" style="--c:var(--pink)"><h3>Leaves</h3><div class="feel" aria-label="gone">👋</div><dl><dt>User</dt><dd>Loan repaid, app uninstalled</dd><dt>Pain</dt><dd>No reason to come back</dd><dt>Opportunity</dt><dd class="fix">A daily reason to return: new offers and tools</dd></dl></div>
-      </div></div>
-    </section>
-
     <section class="cs-sec" id="e-pages">
-      <div class="sec-head"><h2>Pages</h2>
-        <div class="story" data-id="US-E5" data-a="an" data-who="interviewer" data-want="to see the screens she designed and the reasoning behind them" data-so="I can judge her UX thinking" data-done="Every screen has a one-line design decision|Screens follow the user's path"></div>
-        <p class="sec-sub">Built from my wireframes and Figma work. Swipe to see all four.</p></div>
+      <div class="sec-head"><h2>The design</h2>
+        <div class="story" data-id="US-E5" data-a="an" data-who="interviewer" data-want="to see the screens and the reasoning behind them" data-so="I can judge her UX thinking" data-done="Every screen has a one-line reason"></div>
+        <p class="sec-sub">From my wireframes. Names and amounts are sample data.</p></div>
       <div class="screens">
         <figure class="shot" style="margin:0"><div class="phone"><div class="scr e">
           <div class="home-top"><small>Good morning</small><br><b>Rahul</b></div>
@@ -1019,7 +1189,7 @@ footer{padding:26px 0 40px;text-align:center;font-weight:600;color:var(--muted);
           <div class="emi"><small style="color:#777">EMI due 5 Jul</small><br><b>₹4,250</b> <span style="float:right;color:#2E4DF0;font-weight:800">Pay now</span></div>
           <div class="nudge">3 new things picked for you<span>Explore</span></div>
           <div class="ghost"></div><div class="ghost"></div>
-        </div></div><figcaption class="cap"><b>Homepage entry</b>The nudge sits right under the EMI card, above the fold, because 59% never scroll. The UPI strip I shipped sits on top.</figcaption></figure>
+        </div></div><figcaption class="cap"><b>Homepage entry</b>The nudge sits under the EMI card, above the fold.</figcaption></figure>
 
         <figure class="shot" style="margin:0"><div class="phone"><div class="scr e">
           <div class="status"></div>
@@ -1032,7 +1202,7 @@ footer{padding:26px 0 40px;text-align:center;font-weight:600;color:var(--muted);
           <div class="sec">What's new for you</div>
           <div class="cards2"><div><i></i><b>Health cover</b></div><div><i></i><b>Gold SIP</b></div></div>
           <div class="toggle">Never miss updates<span class="sw"></span></div>
-        </div></div><figcaption class="cap"><b>Explore, top</b>The most relevant items first: what's just launched, personal highlights, then categories.</figcaption></figure>
+        </div></div><figcaption class="cap"><b>Explore, top</b>What's new and personal comes first.</figcaption></figure>
 
         <figure class="shot" style="margin:0"><div class="phone"><div class="scr e">
           <div class="status"></div>
@@ -1045,7 +1215,7 @@ footer{padding:26px 0 40px;text-align:center;font-weight:600;color:var(--muted);
           <div class="missed"><i></i><div><b>Pay bills with UPI</b><small>Faster, no extra app</small></div><span class="try">Try now</span></div>
           <div class="missed"><i style="background:#E4F8EF"></i><div><b>Credit score check</b><small>Free, every month</small></div><span class="try">Try now</span></div>
           <div class="proof">23% missed this update last month!</div>
-        </div></div><figcaption class="cap"><b>Explore, lower</b>Videos for users who need to understand before trusting, and social proof to pull back missed updates.</figcaption></figure>
+        </div></div><figcaption class="cap"><b>Explore, lower</b>Short videos, and updates you missed.</figcaption></figure>
 
         <figure class="shot" style="margin:0"><div class="phone"><div class="scr e">
           <div class="status"></div>
@@ -1056,43 +1226,28 @@ footer{padding:26px 0 40px;text-align:center;font-weight:600;color:var(--muted);
           <div class="sheet"><div class="grab"></div><b class="t">Blockbuster EMI Days</b><small style="color:#666">No-cost EMI on electronics from top brands.</small>
             <div class="steps"><div><i>1</i>Pick a product</div><div><i>2</i>Choose EMI plan</div><div><i>3</i>Pay with EMI Card</div></div>
             <div class="go">Avail offer</div><div class="later">Remind me later</div></div>
-        </div></div><figcaption class="cap"><b>Offer summary</b>Progressive disclosure: a short summary sheet in 3 steps, before sending users into the full journey.</figcaption></figure>
+        </div></div><figcaption class="cap"><b>Offer summary</b>A 3-step summary before the full journey.</figcaption></figure>
       </div>
-      <p class="note">High-fidelity versions of my wireframes, redrawn for this portfolio. Names and amounts are sample data.</p>
-    </section>
-
-    <section class="cs-sec" id="e-flows">
-      <div class="sec-head"><h2>Key flows</h2>
-        <div class="story" data-id="US-E6" data-a="a" data-who="returning user" data-want="a short path from a nudge to a product I care about" data-so="exploring feels easy, not like work" data-done="Discovery takes five taps or fewer|A path exists to bring back users who missed updates"></div></div>
-      <h3 class="flow-title">1. Discover a product</h3>
-      <div class="flow"><div class="st">Homepage<small>pays EMI</small></div><span class="ar"></span><div class="st">Nudge<small>"3 new things for you"</small></div><span class="ar"></span><div class="st">Explore<small>personalised highlights</small></div><span class="ar"></span><div class="st">Summary sheet<small>3 easy steps</small></div><span class="ar"></span><div class="st go">Product journey<small>cross-sell</small></div></div>
-      <h3 class="flow-title">2. Win back a missed update</h3>
-      <div class="flow"><div class="st">Alerts on<small>"Never miss updates"</small></div><span class="ar"></span><div class="st">What's new<small>one relevant alert</small></div><span class="ar"></span><div class="st">Updates you missed<small>with social proof</small></div><span class="ar"></span><div class="st go">Try now<small>feature adopted</small></div></div>
-      <h3 class="flow-title">3. Learn, then act</h3>
-      <div class="flow"><div class="st">Explore products<small>pick a category</small></div><span class="ar"></span><div class="st">Quick video<small>or remind me later</small></div><span class="ar"></span><div class="st go">Start application<small>with confidence</small></div></div>
+      
     </section>
 
     <section class="cs-sec" id="e-impact">
       <div class="sec-head"><h2>Impact</h2>
-        <div class="story" data-id="US-E7" data-a="a" data-who="hiring manager" data-want="to see the targets, the plan and what shipped" data-so="I know she connects design to business results" data-done="Targets are measurable|The roadmap is phased|Shipped work is listed separately"></div></div>
+        <div class="story" data-id="US-E7" data-a="a" data-who="hiring manager" data-want="to see the targets and the plan" data-so="I know she connects design to results" data-done="Targets are measurable|The roadmap is phased"></div></div>
       <div class="stats">
-        <div class="stat" style="--c:var(--sun)"><span class="n">+15–20%</span><p>engagement target in the first 2–3 months (clicks and time in Explore)</p></div>
-        <div class="stat" style="--c:var(--mint)"><span class="n">+12–15%</span><p>repeat visits target to the Explore page</p></div>
-        <div class="stat" style="--c:var(--pink)"><span class="n">49%</span><p>funnel drop-off found in Mixpanel, turned into 3 UX fixes</p></div>
-        <div class="stat" style="--c:var(--lilac)"><span class="n">12+</span><p>stakeholders aligned across product, design, tech and business</p></div>
+        <div class="stat" style="--c:var(--sun)"><span class="n">+15%</span><p>engagement target</p></div>
+        <div class="stat" style="--c:var(--mint)"><span class="n">+12%</span><p>repeat visits target</p></div>
+        <div class="stat" style="--c:var(--pink)"><span class="n">49%</span><p>drop-off found, 3 fixes</p></div>
+        <div class="stat" style="--c:var(--lilac)"><span class="n">12+</span><p>stakeholders aligned</p></div>
       </div>
-      <h3 class="flow-title" style="margin:34px 0 14px">The 5-phase roadmap I built</h3>
-      <div class="roadmap">
-        <div><b>Validate</b><small>Month 0–1</small><p>Wireframes, team feedback, early user tests</p></div>
-        <div><b>MVP</b><small>Month 1–3</small><p>Personalised picks, categories, offers for you</p></div>
-        <div><b>Enrich</b><small>Month 3–6</small><p>Calculators, learning content, basic personalisation</p></div>
-        <div><b>AI</b><small>Month 6–9</small><p>AI recommendations in real time</p></div>
-        <div><b>Optimise</b><small>Ongoing</small><p>A/B tests, KPI tracking, UX tweaks</p></div>
+      <div class="roadmap" style="margin-top:24px">
+        <div><b>Validate</b><small>Month 0–1</small></div>
+        <div><b>MVP</b><small>Month 1–3</small></div>
+        <div><b>Enrich</b><small>Month 3–6</small></div>
+        <div><b>AI</b><small>Month 6–9</small></div>
+        <div><b>Optimise</b><small>Ongoing</small></div>
       </div>
-      <div class="two" style="margin-top:30px">
-        <div class="box"><h3>Also shipped that summer</h3><ul><li><b>UPI strip on the homepage:</b> owned end to end, 9 app and web scenarios, with payments, design, compliance and engineering</li><li><b>Google app indexing:</b> deep-link structure and schema with SEO, engineering and a vendor</li><li><b>Seasonal homepage themes:</b> timed to festival and sale campaigns with marketing and design</li></ul></div>
-        <div class="box"><h3>What I learned</h3><ul><li>Business and users can want different things from the same app; the page has to serve both</li><li>Small research details, like scroll depth, can move an entire layout</li><li>Phase the rollout so you learn cheaply before you build big</li></ul></div>
-      </div>
+      <p class="metrics-line" style="margin-top:20px"><b>Also shipped:</b> <span>UPI strip on the homepage</span><span>Google app indexing</span><span>Seasonal themes</span></p>
     </section>
 
     <div class="next-cs"><a class="btn" href="#/dastaar">Previous: DASTAAR</a><a class="btn primary" href="#/bschool">Next: B-school career platform</a></div>
@@ -1104,80 +1259,112 @@ footer{padding:26px 0 40px;text-align:center;font-weight:600;color:var(--muted);
   <div class="wrap">
     <div class="cs-top">
       <a class="back" href="#work">Back to all work</a><br>
-      <div class="story" data-id="US-S0" data-a="a" data-who="hiring manager" data-want="the whole project in 30 seconds before I dive in" data-so="I know if it's worth reading on" data-done="Role, length, team and output are in one strip|The launch status is stated honestly"></div>
+      <div class="story" data-id="US-S0" data-a="a" data-who="hiring manager" data-want="the whole project in 30 seconds" data-so="I know if it's worth reading on" data-done="Role, length and status are in one strip"></div>
       <h1 class="cs-title" style="--c:var(--mint)">B-school career platform</h1>
-      <p class="cs-lede">A 6-week live project with an early-stage startup. I took a kickoff call and a long wishlist to a build-ready MVP: PRDs, high-fidelity designs and a sprint plan.</p>
+      <p class="cs-lede">A startup's long wishlist, turned into a scoped, designed and build-ready MVP in 6 weeks.</p>
       <div class="bb-hero">
         <figure class="browser" style="margin:0">
           <div class="chrome" aria-hidden="true"><i></i><i></i><i></i><span>Homepage concept</span></div>
-          <button class="zoom" type="button"><img src="img/bbd-home-top.jpg" width="1440" height="640" alt="Homepage design: audience tabs for students, colleges and companies, search, and a navy hero banner reading 'Land your summer internship before the rush' with cards for an internship, a mentor and a case competition."></button>
+          <button class="zoom" type="button"><img src="img/bbd-home-top.jpg" width="1440" height="640" alt="Homepage design with audience tabs, search and a hero banner."></button>
         </figure>
-        <figure class="bb-phone"><div class="phone real sm"><button class="scr zoom" type="button"><img src="img/bbd-mobile.jpg" width="780" height="1690" alt="Mobile homepage design: search, audience tabs, hero banner, category icons and an internship card, with a bottom navigation bar."></button></div></figure>
+        <figure class="bb-phone"><div class="phone real sm"><button class="scr zoom" type="button"><img src="img/bbd-mobile.jpg" width="780" height="1690" alt="Mobile homepage design."></button></div></figure>
       </div>
       <div class="glance">
         <div><b>My role</b><span>Product manager</span></div>
         <div><b>Project</b><span>Live project, 6 weeks</span></div>
-        <div><b>Worked with</b><span>Founders, design and tech</span></div>
-        <div><b>Status</b><span>Designed and build-ready, not launched</span></div>
+        <div><b>Worked with</b><span>Founders, design, tech</span></div>
+        <div><b>Status</b><span>Build-ready, not launched</span></div>
       </div>
-      <div class="toc"><a href="#s-problem">Problem</a><a href="#s-users">Users</a><a href="#s-prioritise">Prioritisation</a><a href="#s-prd">PRDs</a><a href="#s-journey">Customer journey</a><a href="#s-decisions">Product decisions</a><a href="#s-plan">Build plan</a><a href="#s-outcome">Outcome</a></div>
     </div>
 
     <section class="cs-sec" id="s-problem">
       <div class="sec-head"><h2>The problem</h2>
-        <div class="story" data-id="US-S1" data-a="a" data-who="founder" data-want="one clear first version instead of every idea at once" data-so="we can launch fast and learn from real students" data-done="The business model is mapped|The wishlist is turned into one problem statement"></div></div>
+        <div class="story" data-id="US-S1" data-a="a" data-who="founder" data-want="one clear first version instead of every idea at once" data-so="we can launch fast and learn" data-done="The wishlist becomes one problem statement"></div></div>
       <div class="two">
         <div class="prose">
-          <p>The startup began as a community where B-school students mentor aspirants for GD-PI and help each other. The founders wanted a website that would serve students, and also bring in colleges and companies, the side that pays.</p>
-          <p>I started with a kickoff call and a long wishlist: internships, jobs, mentorship, courses, webinars, case competitions, plus pages for colleges and companies. Building all of it at once would have taken months.</p>
-          <div class="hmw"><small>How might we</small>turn a long wishlist into a first website students will use, and a small team can actually ship?</div>
+          <p>A B-school community wanted one website for students, colleges and companies. The wishlist would have taken months to build.</p>
+          <div class="hmw"><small>How might we</small>pick a first version a small team can actually ship?</div>
         </div>
-        <div class="box"><h3>The business model I mapped</h3><ul><li><b>Students:</b> a free community, with mentorship priced to pay mentors, not for profit</li><li><b>Colleges:</b> guest lectures, placement prep and webinars</li><li><b>Companies:</b> hiring for internships, fresher roles, live projects and case competitions</li><li>Students bring the audience; colleges and companies bring the revenue</li></ul></div>
+        <div class="box"><h3>Who's who</h3><ul><li><b>Students</b> bring the audience</li><li><b>Colleges and companies</b> bring the revenue</li></ul></div>
       </div>
     </section>
 
     <section class="cs-sec" id="s-users">
       <div class="sec-head"><h2>Who it's for</h2>
-        <div class="story" data-id="US-S2" data-a="a" data-who="product lead" data-want="to see which users the MVP serves first, and which it holds back" data-so="I can judge the focus of the first release" data-done="Each segment has its pain points|Out-of-scope users are named"></div>
-        <p class="sec-sub">Three student segments along the B-school journey, plus the two paying sides. I mapped each one's pains before choosing features.</p></div>
+        <div class="story" data-id="US-S2" data-a="a" data-who="product lead" data-want="to see which users the MVP serves first, and which it holds back" data-so="I can judge the focus of the first release" data-done="Each persona has a goal, a frustration and a habit|Out-of-scope users are named"></div>
+        <p class="sec-sub">Three student segments along the B-school journey, plus the side that pays.</p></div>
       <div class="personas">
-        <div class="persona"><div class="face" style="--c:var(--lilac)">A</div><h3>The aspirant</h3><p class="meta">Preparing for CAT and GD-PI</p><p>Doesn't know where to start, drowns in generic advice, and prepares alone.</p><p class="needs">Needs: credible mentors and peers</p></div>
-        <div class="persona"><div class="face" style="--c:var(--sun)">S</div><h3>The MBA student</h3><p class="meta">The core user, called the "golden customer" at kickoff</p><p>Overwhelmed by summer and final placements, short on live projects and networks.</p><p class="needs">Needs: internships, jobs and placement prep</p></div>
-        <div class="persona"><div class="face" style="--c:var(--mint)">L</div><h3>The alum</h3><p class="meta">Working, a few years out of B-school</p><p>Wants to give back, but mentoring over LinkedIn doesn't fit a busy week.</p><p class="needs">Needs: a structured way to mentor</p></div>
-        <div class="persona"><div class="face" style="--c:var(--peach)">C</div><h3>Colleges and companies</h3><p class="meta">The paying side</p><p>Want to reach B-school talent for training, hiring and case competitions.</p><p class="needs">Gets: a simple "work with us" form in the MVP</p></div>
+        <div class="persona"><div class="face" style="--c:var(--lilac)">K</div><h3>Kavya, 23</h3><p class="meta">The aspirant · preparing for CAT and GD-PI</p>
+          <dl class="pdl"><dt>Wants</dt><dd>A mentor who has cleared the same exam and interview.</dd><dt>Frustration</dt><dd>Drowns in generic advice; doesn't know where to start.</dd><dt>How she prepares</dt><dd>Preps alone after work, mostly from free videos and forums.</dd></dl>
+          <p class="needs">Gets: mentors for GD-PI prep</p></div>
+        <div class="persona"><div class="face" style="--c:var(--sun)">A</div><h3>Arjun, 25</h3><p class="meta">The MBA student · the "golden customer"</p>
+          <dl class="pdl"><dt>Wants</dt><dd>A summer internship, then a strong final placement.</dd><dt>Frustration</dt><dd>Openings are scattered, and most aren't meant for MBA students.</dd><dt>How he searches</dt><dd>Checks LinkedIn and WhatsApp groups daily; applies near deadlines.</dd></dl>
+          <p class="needs">Gets: internships and jobs in one place, with one-step apply</p></div>
+        <div class="persona"><div class="face" style="--c:var(--mint)">N</div><h3>Neha, 30</h3><p class="meta">The alum · brand manager, 3 years out</p>
+          <dl class="pdl"><dt>Wants</dt><dd>To give back to students without a big time commitment.</dd><dt>Frustration</dt><dd>Mentoring over LinkedIn DMs doesn't fit a busy week.</dd><dt>How she helps</dt><dd>Has an hour or two on some evenings and weekends.</dd></dl>
+          <p class="needs">Gets: mentoring in slots she picks</p></div>
+        <div class="persona"><div class="face" style="--c:var(--peach)">P</div><h3>The placement head</h3><p class="meta">Colleges and companies · the paying side</p>
+          <dl class="pdl"><dt>Wants</dt><dd>To reach MBA talent for hiring, training and case competitions.</dd><dt>Frustration</dt><dd>No single channel to the right students.</dd><dt>How they engage</dt><dd>Works through partnerships and campus relationships.</dd></dl>
+          <p class="needs">Gets: a simple "work with us" form in the MVP</p></div>
       </div>
-      <div class="jtbd">
-        <div><b>Functional job</b>Find guidance, opportunities and mentors in one place</div>
-        <div><b>Emotional job</b>Feel confident, not anxious, about the B-school journey</div>
-        <div><b>Social job</b>Connect with peers, alumni, colleges and companies</div>
-        <div class="out"><b>Held back on purpose</b>Non-MBA aspirants: a big group, but not the first market</div>
-      </div>
+      <p class="metrics-line"><b>Held back on purpose:</b> <span>Non-MBA aspirants: a big group, but not the first market</span></p>
     </section>
 
     <section class="cs-sec" id="s-prioritise">
       <div class="sec-head"><h2>How I prioritised</h2>
-        <div class="story" data-id="US-S3" data-a="a" data-who="founder" data-want="to know why some features are in and others wait" data-so="I can defend the scope to my team" data-done="Every feature is scored on the same scale|The cut line is visible"></div>
-        <p class="sec-sub">I scored every feature on reach, impact, confidence and effort. The top three made the MVP; the rest wait for real usage data.</p></div>
+        <div class="story" data-id="US-S3" data-a="a" data-who="founder" data-want="to know why some features are in and others wait" data-so="I can defend the scope" data-done="Every feature is scored the same way|The cut line is visible"></div>
+        <p class="sec-sub">Scored on reach, impact, confidence and effort. The top three made the MVP.</p></div>
       <div class="table-scroll"><table class="ba rice">
-        <thead><tr><th scope="col">Feature</th><th scope="col">Reach</th><th scope="col">Impact</th><th scope="col">Confidence</th><th scope="col">Effort</th><th scope="col">Score</th></tr></thead>
+        <thead><tr><th scope="col">Feature</th><th scope="col">Reach</th><th scope="col">Impact</th><th scope="col">Effort</th><th scope="col">Score</th></tr></thead>
         <tbody>
-          <tr class="in"><td>Internship and job listings</td><td>High</td><td>High</td><td>Medium</td><td>Low</td><td><span class="bar" style="--f:1">32</span></td></tr>
-          <tr class="in"><td>Mentorship booking</td><td>High</td><td>High</td><td>High</td><td>Medium</td><td><span class="bar" style="--f:.94">30</span></td></tr>
-          <tr class="in"><td>Placement prep resources</td><td>Medium</td><td>Medium</td><td>High</td><td>Medium</td><td><span class="bar" style="--f:.88">28</span></td></tr>
-          <tr class="cut"><td colspan="6">Cut line: below here waits for version 2</td></tr>
-          <tr><td>Case competition prep tools</td><td>Medium</td><td>High</td><td>Medium</td><td>High</td><td><span class="bar" style="--f:.75">24</span></td></tr>
-          <tr><td>Alumni mentoring sign-up</td><td>Low</td><td>Medium</td><td>High</td><td>Medium</td><td><span class="bar" style="--f:.63">20</span></td></tr>
+          <tr class="in"><td>Internship and job listings</td><td>High</td><td>High</td><td>Low</td><td><span class="bar" style="--f:1">32</span></td></tr>
+          <tr class="in"><td>Mentorship booking</td><td>High</td><td>High</td><td>Medium</td><td><span class="bar" style="--f:.94">30</span></td></tr>
+          <tr class="in"><td>Placement prep</td><td>Medium</td><td>Medium</td><td>Medium</td><td><span class="bar" style="--f:.88">28</span></td></tr>
+          <tr class="cut"><td colspan="5">Cut line</td></tr>
+          <tr><td>Case competition tools</td><td>Medium</td><td>High</td><td>High</td><td><span class="bar" style="--f:.75">24</span></td></tr>
+          <tr><td>Alumni mentoring sign-up</td><td>Low</td><td>Medium</td><td>Medium</td><td><span class="bar" style="--f:.63">20</span></td></tr>
         </tbody>
       </table></div>
-      <p class="note" style="margin-top:12px">Alumni mentoring didn't need a feature at all: a Google Form covers it for now.</p>
+    </section>
+
+    <section class="cs-sec" id="s-journey">
+      <div class="sec-head"><h2>Customer journey</h2>
+        <div class="story" data-id="US-S5" data-a="an" data-who="MBA student" data-want="to go from landing to an application in a few clicks" data-so="I apply before the deadline" data-done="Applying takes one step|Designs back every step"></div>
+        <p class="sec-sub">High-fidelity designs I made from my wireframes. Tap any to enlarge.</p></div>
+      <ol class="jmap">
+        <li class="jstep" style="--c:var(--lilac)">
+          <div class="jtext"><h3>Lands on the homepage</h3><p>Tabs split students, colleges and companies.</p></div>
+        </li>
+        <li class="jstep branch" style="--c:var(--sun)">
+          <div class="jtext"><h3>Picks a way in</h3></div>
+          <div class="fan three">
+            <figure class="way" style="--pos:left top"><button class="way-img zoom" type="button"><img src="img/bbd-search.jpg" loading="lazy" width="1440" height="1057" alt="Internship search with filters."></button><figcaption><b>Internships and jobs</b></figcaption></figure>
+            <figure class="way" style="--pos:left top"><button class="way-img zoom" type="button"><img src="img/bbd-mentor.jpg" loading="lazy" width="1440" height="994" alt="Mentorship: book a mentor."></button><figcaption><b>Mentorship</b></figcaption></figure>
+            <figure class="way" style="--pos:left top"><button class="way-img zoom" type="button"><img src="img/bbd-events.jpg" loading="lazy" width="660" height="285" alt="Case competitions and webinars."></button><figcaption><b>Events</b></figcaption></figure>
+          </div>
+        </li>
+        <li class="jstep" style="--c:var(--peach)">
+          <div class="jtext"><h3>Checks the details</h3><p>Stipend, deadline, and a mentor from the same company.</p></div>
+          <figure class="jshot wide"><div class="browser sm"><div class="chrome" aria-hidden="true"><i></i><i></i><i></i></div><button class="zoom" type="button"><img src="img/bbd-detail.jpg" loading="lazy" width="1440" height="893" alt="Internship detail page design."></button></div><figcaption class="jcap">Internship detail</figcaption></figure>
+        </li>
+        <li class="jstep" style="--c:var(--pink)">
+          <div class="jtext"><h3>Applies in one step</h3><p>Resume and contact details are prefilled.</p></div>
+          <figure class="jshot wide"><div class="browser sm"><div class="chrome" aria-hidden="true"><i></i><i></i><i></i></div><button class="zoom" type="button"><img src="img/bbd-apply.jpg" loading="lazy" width="1440" height="1001" alt="Apply modal design."></button></div><figcaption class="jcap">Apply modal</figcaption></figure>
+        </li>
+        <li class="jstep end" style="--c:var(--blue)">
+          <div class="jtext"><h3>Tracks it</h3><p>Every application's status, in one dashboard.</p></div>
+          <figure class="jshot wide"><div class="browser sm"><div class="chrome" aria-hidden="true"><i></i><i></i><i></i></div><button class="zoom" type="button"><img src="img/bbd-dash.jpg" loading="lazy" width="1440" height="1001" alt="Student dashboard design."></button></div><figcaption class="jcap">Dashboard</figcaption></figure>
+        </li>
+      </ol>
     </section>
 
     <section class="cs-sec" id="s-prd">
       <div class="sec-head"><h2>PRDs</h2>
-        <div class="story" data-id="US-S4" data-a="a" data-who="developer on the team" data-want="requirements I can build from without a meeting" data-so="I know what to build, in what order, and how we'll know it worked" data-done="Scope is split into must, should, could and won't|Every requirement has an ID and a priority|Acceptance criteria are testable|Metrics, risks and open questions are written down"></div>
-        <p class="sec-sub">One platform PRD for the MVP, and one for each of the two features that carry it. Pick a tab.</p></div>
-
-      <div class="prd-tabs" role="tablist" aria-label="PRDs">
+        <div class="story" data-id="US-S4" data-a="a" data-who="developer on the team" data-want="requirements I can build from" data-so="I know what to build and how we'll know it worked" data-done="Scope is prioritised|Acceptance criteria are testable"></div>
+        <p class="sec-sub">A platform PRD and two feature PRDs, with scope, user stories, metrics and risks.</p></div>
+      <details class="more-detail">
+        <summary>Open the PRDs</summary>
+        <div class="prd-tabs" role="tablist" aria-label="PRDs">
         <button role="tab" aria-selected="true" aria-controls="prd-1" id="prd-t1">MVP platform</button>
         <button role="tab" aria-selected="false" aria-controls="prd-2" id="prd-t2" tabindex="-1">Internship and job search</button>
         <button role="tab" aria-selected="false" aria-controls="prd-3" id="prd-t3" tabindex="-1">Mentorship booking</button>
@@ -1266,165 +1453,29 @@ footer{padding:26px 0 40px;text-align:center;font-weight:600;color:var(--muted);
           <section class="prd-2col"><div><h4>4. How it runs at launch</h4><ul><li>Mentors share availability through a Google Form</li><li>The team confirms each booking by email or WhatsApp</li><li>Mentor cancels: offer the student the next slot automatically</li><li>Student no-show: one free reschedule</li></ul></div><div><h4>5. Metrics</h4><ul><li>Time to match a "Match me" request</li><li>Bookings per mentor page visit</li><li>Sessions completed versus booked</li><li>Average rating and repeat bookings</li></ul></div></section>
         </div>
       </article>
-    </section>
-
-    <section class="cs-sec" id="s-journey">
-      <div class="sec-head"><h2>Customer journey</h2>
-        <div class="story" data-id="US-S5" data-a="an" data-who="MBA student" data-want="to go from landing to an application in a few clicks" data-so="I apply before the deadline, not after" data-done="Every way in leads to an opening or a mentor|Applying takes one step|Designs back every step"></div>
-        <p class="sec-sub">I turned my wireframes into high-fidelity designs and a site map. Here's the path a student takes. Tap any screen to enlarge it.</p></div>
-
-      <figure class="card-frame">
-        <button class="zoom" type="button"><img src="img/bbd-ia.jpg" loading="lazy" width="1300" height="573" alt="Site map: the homepage branches into internships and jobs, mentorship, events, my account, and colleges and companies. Each branch lists its pages, marked as in the MVP, soon after launch, or version 2."></button>
-      </figure>
-
-      <ol class="jmap">
-        <li class="jstep" style="--c:var(--lilac)">
-          <div class="jtext">
-            <h3>Lands on the homepage</h3>
-            <p>One site serves three audiences, so tabs at the top split them, the way BookMyShow separates customers from businesses. On a phone, the same page stacks into one column with a bottom bar.</p>
-            <div class="chips"><span>Students</span><span>Colleges</span><span>Companies</span><span>Search</span></div>
-            <p class="detour"><b>A college or company?</b> They get a simple "work with us" form, not a whole portal, until demand proves otherwise.</p>
-          </div>
-          <figure class="jshot"><div class="phone real sm"><button class="scr zoom" type="button"><img src="img/bbd-mobile.jpg" loading="lazy" width="780" height="1690" alt="Mobile homepage design."></button></div><figcaption class="jcap">Homepage on mobile</figcaption></figure>
-        </li>
-
-        <li class="jstep branch" style="--c:var(--sun)">
-          <div class="jtext">
-            <h3>Picks a way in</h3>
-            <p>Three ways in, matched to the top-scored features. Internships get the most space, because that's the platform's strength.</p>
-          </div>
-          <div class="fan three">
-            <figure class="way" style="--pos:left top"><button class="way-img zoom" type="button"><img src="img/bbd-search.jpg" loading="lazy" width="1440" height="1057" alt="Internship search design: filters on the left for experience, work mode, domain, duration, stipend and hiding expired openings; 24 results with active filter chips, sorted by deadline."></button><figcaption><b>Internships and jobs</b>Search, filter and sort live openings, then save or apply from the list.</figcaption></figure>
-            <figure class="way" style="--pos:left top"><button class="way-img zoom" type="button"><img src="img/bbd-mentor.jpg" loading="lazy" width="1440" height="994" alt="Mentorship design: a 'first session is free' banner, goal filters and mentor cards with company, rating and next available slots."></button><figcaption><b>Mentorship</b>Pick a goal, then a mentor and a slot. Or ask to be matched.</figcaption></figure>
-            <figure class="way" style="--pos:left top"><button class="way-img zoom" type="button"><img src="img/bbd-events.jpg" loading="lazy" width="660" height="285" alt="Case competitions and webinars section with a dated event card."></button><figcaption><b>Case competitions and webinars</b>See what's coming up and sign up for the next event.</figcaption></figure>
-          </div>
-          <p class="merge">All three lead to a detail page</p>
-        </li>
-
-        <li class="jstep" style="--c:var(--mint)">
-          <div class="jtext">
-            <h3>Narrows it down</h3>
-            <p>Filters answer the questions MBA students actually ask about an internship. Each one shows as a chip that's one tap to remove.</p>
-            <div class="optrow"><b>Experience</b><div class="chips"><span>Fresher</span><span>Under 2 years</span><span>2 to 3 years</span></div></div>
-            <div class="optrow"><b>Mode</b><div class="chips"><span>Remote</span><span>Onsite</span><span>Hybrid</span></div></div>
-            <div class="optrow"><b>Pay</b><div class="chips"><span>Paid only</span><span>Any</span></div></div>
-            <div class="optrow"><b>Duration</b><div class="chips"><span>1 to 6 months, on a slider</span></div></div>
-            <div class="optrow"><b>Deadline</b><div class="chips"><span>Hide expired, on by default</span></div></div>
-          </div>
-        </li>
-
-        <li class="jstep" style="--c:var(--peach)">
-          <div class="jtext">
-            <h3>Checks the details</h3>
-            <p>Stipend, duration, start date and deadline sit in one strip. The apply card counts down to the deadline, and the side panel suggests a mentor who works at the same company.</p>
-            <p class="detour"><b>The cross-sell:</b> an internship page nudges students towards mentorship, turning a free visit into a possible paid session.</p>
-          </div>
-          <figure class="jshot wide"><div class="browser sm"><div class="chrome" aria-hidden="true"><i></i><i></i><i></i></div><button class="zoom" type="button"><img src="img/bbd-detail.jpg" loading="lazy" width="1440" height="893" alt="Internship detail design: Brand Marketing Intern at Nimbus Foods, with stipend, duration, start date and deadline, tabs, role details, an apply card with a countdown, a mentor nudge and similar internships."></button></div><figcaption class="jcap">Internship detail</figcaption></figure>
-        </li>
-
-        <li class="jstep" style="--c:var(--pink)">
-          <div class="jtext">
-            <h3>Applies in one step</h3>
-            <p>Apply opens a modal, not a new page. The resume, email and phone come from the profile, and only the company's own questions need an answer.</p>
-            <div class="flow tight"><div class="st">Resume<small>from profile</small></div><span class="ar"></span><div class="st">Email and phone<small>prefilled</small></div><span class="ar"></span><div class="st">Company questions<small>e.g. start date</small></div><span class="ar"></span><div class="st go">Submit</div></div>
-          </div>
-          <figure class="jshot wide"><div class="browser sm"><div class="chrome" aria-hidden="true"><i></i><i></i><i></i></div><button class="zoom" type="button"><img src="img/bbd-apply.jpg" loading="lazy" width="1440" height="1001" alt="Apply modal design: resume from profile, a 'coming soon' resume match check, prefilled email and phone, a start date question, an optional note and a Submit application button."></button></div><figcaption class="jcap">Apply modal</figcaption></figure>
-        </li>
-
-        <li class="jstep end" style="--c:var(--blue)">
-          <div class="jtext">
-            <h3>Tracks it</h3>
-            <p>The dashboard shows every application's status, what's coming up this week, and how complete the profile is. The next deadline and mentor session are always one glance away.</p>
-          </div>
-          <figure class="jshot wide"><div class="browser sm"><div class="chrome" aria-hidden="true"><i></i><i></i><i></i></div><button class="zoom" type="button"><img src="img/bbd-dash.jpg" loading="lazy" width="1440" height="1001" alt="Dashboard design: counts of applied, shortlisted, interviews and saved; a table of applications with statuses; upcoming deadlines, a mentor session and an interview; and profile completeness."></button></div><figcaption class="jcap">Student dashboard</figcaption></figure>
-        </li>
-      </ol>
-
-      <div class="ds">
-        <h3 class="flow-title" style="margin:0 0 14px">The design system behind the screens</h3>
-        <div class="ds-grid">
-          <div class="ds-sw" style="--s:#16235A"><i></i><b>Blazer navy</b><small>#16235A, trust and structure</small></div>
-          <div class="ds-sw" style="--s:#F5A524"><i></i><b>Marigold</b><small>#F5A524, primary actions</small></div>
-          <div class="ds-sw" style="--s:#0E9F8E"><i></i><b>Teal</b><small>#0E9F8E, stipends and success</small></div>
-          <div class="ds-sw" style="--s:#D9435E"><i></i><b>Rose</b><small>#D9435E, deadlines only</small></div>
-          <div class="ds-type"><b>Plus Jakarta Sans</b><small>One family, 5 weights. Bold for headings, regular for body.</small></div>
-        </div>
-        <p class="note" style="margin-top:10px">Rose is reserved for deadlines, so urgency never gets lost among other colours. All company and mentor names in the designs are made up.</p>
-      </div>
+      </details>
     </section>
 
     <section class="cs-sec" id="s-decisions">
-      <div class="sec-head"><h2>Product decisions</h2>
-        <div class="story" data-id="US-S6" data-a="a" data-who="product lead" data-want="to see what she cut and why" data-so="I know she can protect a small team's time" data-done="Each decision names the trade-off|Options are compared, not just picked"></div>
-        <p class="sec-sub">The calls that kept the MVP small enough to ship, starting with the biggest one.</p></div>
-
-      <h3 class="flow-title" style="margin-bottom:12px">The homepage call: content-rich, minimal, or both?</h3>
-      <div class="table-scroll"><table class="ba opts">
-        <thead><tr><th scope="col"></th><th scope="col">Unstop-style<br><small>content-rich</small></th><th scope="col">Zomato Live-style<br><small>minimal</small></th><th scope="col">Hybrid<br><small>my pick</small></th></tr></thead>
-        <tbody>
-          <tr><td>Design complexity</td><td>High</td><td>Low</td><td>Medium</td></tr>
-          <tr><td>Time to build</td><td>Longer</td><td>Shorter</td><td>Moderate</td></tr>
-          <tr><td>Cost</td><td>Higher</td><td>Lower</td><td>Moderate</td></tr>
-          <tr><td>First visit</td><td>Complete but dense</td><td>Clean but thin</td><td>Focused and informative</td></tr>
-          <tr><td>Room to grow</td><td>Excellent</td><td>Limited</td><td>Good</td></tr>
-        </tbody>
-      </table></div>
-      <p class="note" style="margin:12px 0 30px">The hybrid homepage keeps Zomato Live's clean top (logo, search, one banner) and adds Unstop's category rows below, led by internships.</p>
-
+      <div class="sec-head"><h2>Key decisions</h2>
+        <div class="story" data-id="US-S6" data-a="a" data-who="product lead" data-want="to see what she cut and why" data-so="I know she can protect a small team's time" data-done="Each decision names the trade-off"></div></div>
       <div class="decisions">
-        <div class="dec" style="--c:var(--sun)"><h3>Internships lead</h3><p>They scored highest and are the platform's strength, so they get the most homepage space. Courses stay small for now.</p><span>In the journey: step 2</span></div>
-        <div class="dec" style="--c:var(--mint)"><h3>Match mentors by hand</h3><p>A matching algorithm is expensive to build. The team assigns mentors manually first, and automates once the patterns are clear.</p><span>In the mentorship PRD: M4</span></div>
-        <div class="dec" style="--c:var(--pink)"><h3>Google Sheets as the admin panel</h3><p>The team adds openings to a Google Sheet that syncs to the site. That saves building an admin panel before anyone uses it.</p><span>In the platform PRD: scope</span></div>
-        <div class="dec" style="--c:var(--lilac)"><h3>Solve the cold start</h3><p>A new platform has no users. Free first mentorship sessions give students a reason to sign up in the early weeks.</p><span>In the mentorship PRD: M5</span></div>
-        <div class="dec" style="--c:var(--peach)"><h3>Forms, not portals, for B2B</h3><p>Colleges and companies get a contact form, like Zomato Live's "list your business". A full portal waits until demand shows up.</p><span>In the journey: step 1</span></div>
-        <div class="dec" style="--c:var(--sun)"><h3>Hide what's expired</h3><p>Nothing frustrates a student more than a closed role. Expired openings are hidden by default, and deadlines get their own colour.</p><span>In the search PRD: S2</span></div>
-      </div>
-    </section>
-
-    <section class="cs-sec" id="s-plan">
-      <div class="sec-head"><h2>Build plan</h2>
-        <div class="story" data-id="US-S7" data-a="a" data-who="developer on the team" data-want="a clear scope, sequence and effort estimate" data-so="I can start building without guessing" data-done="Sprints are sequenced|Effort is estimated in hours|Build and hosting options are compared"></div>
-        <p class="sec-sub">I turned the PRDs into sprints, estimated the effort, and compared ways to build and host the site.</p></div>
-      <div class="roadmap">
-        <div><b>Sprint 1</b><small>Weeks 1–3</small><p>Sign-up and profiles, posting openings, search with filters</p></div>
-        <div><b>Sprint 2</b><small>Weeks 4–6</small><p>Mentor booking, application tracking, deadline and status emails</p></div>
-        <div><b>Sprint 3</b><small>Weeks 7–9</small><p>Basic recommendations, views and applications analytics</p></div>
-        <div><b>Launch</b><small>Week 10</small><p>Staging, QA and bug fixes, then go live</p></div>
-        <div><b>Next</b><small>After launch</small><p>Social login, resume parsing, custom admin panel, AI resume review</p></div>
-      </div>
-      <div class="two" style="margin-top:30px">
-        <div>
-          <h3 class="flow-title" style="margin:0 0 12px">MVP effort estimate</h3>
-          <table class="ba hours">
-            <thead><tr><th scope="col">Work</th><th scope="col">Hours</th></tr></thead>
-            <tbody>
-              <tr><td>Back end: data, sign-up, openings, applications</td><td>70</td></tr>
-              <tr><td>Front end: homepage, search, profile, apply</td><td>60</td></tr>
-              <tr><td>Testing</td><td>10–20</td></tr>
-              <tr><td>Setup</td><td>8</td></tr>
-              <tr><td>Deployment</td><td>5</td></tr>
-              <tr class="total"><td>MVP total</td><td>~155–165</td></tr>
-            </tbody>
-          </table>
-          <p class="note" style="margin-top:10px">Plus 30 hours for the AI resume and job-match tools, held for version 2.</p>
-        </div>
-        <div class="box"><h3>How to build and host it</h3><ul><li><b>Wix</b> to launch in days, at the lowest cost</li><li><b>WordPress</b> as the site grows, for SEO and plugins</li><li><b>Custom code (Node.js)</b> only once a custom job board or analytics justify it</li><li><b>Hosting:</b> compared 5 providers, from ₹60 a month</li></ul></div>
+        <div class="dec" style="--c:var(--sun)"><h3>Hybrid homepage</h3><p>A clean top, with category rows below.</p></div>
+        <div class="dec" style="--c:var(--mint)"><h3>Match mentors by hand</h3><p>Automate once the patterns are clear.</p></div>
+        <div class="dec" style="--c:var(--pink)"><h3>Sheets as the admin panel</h3><p>No back office before anyone uses it.</p></div>
+        <div class="dec" style="--c:var(--lilac)"><h3>Free first session</h3><p>A reason to sign up on day one.</p></div>
       </div>
     </section>
 
     <section class="cs-sec" id="s-outcome">
       <div class="sec-head"><h2>Outcome</h2>
-        <div class="story" data-id="US-S8" data-a="a" data-who="hiring manager" data-want="to see what she left the team with" data-so="I know the work was usable, not just thorough" data-done="Deliverables are listed|The launch status is stated plainly|Success metrics are defined before launch"></div>
-        <p class="sec-sub">In 6 weeks, the team went from a kickoff call to a scoped, designed and estimated MVP. The site didn't go live, so there are no usage numbers; here's what I handed over.</p></div>
+        <div class="story" data-id="US-S8" data-a="a" data-who="hiring manager" data-want="to see what she left the team with" data-so="I know the work was usable" data-done="Deliverables are listed"></div>
+        <p class="sec-sub">The site didn't launch. Here's what I handed over.</p></div>
       <div class="stats">
-        <div class="stat" style="--c:var(--sun)"><span class="n">3</span><p>PRDs: the platform, search, and mentorship</p></div>
-        <div class="stat" style="--c:var(--mint)"><span class="n">12</span><p>competitors benchmarked, page by page</p></div>
-        <div class="stat" style="--c:var(--pink)"><span class="n">7</span><p>high-fidelity screens, desktop and mobile</p></div>
-        <div class="stat" style="--c:var(--lilac)"><span class="n">10</span><p>weeks from build start to launch, fully estimated</p></div>
-      </div>
-      <div class="two" style="margin-top:28px">
-        <div class="box"><h3>If it had launched, I'd watch</h3><ul><li><b>First 2 weeks:</b> sign-up to first application, and where students drop off in search</li><li><b>First month:</b> mentor bookings per week and session completion</li><li><b>After a baseline:</b> set targets for applications per weekly active student</li></ul></div>
-        <div class="box"><h3>What I learned</h3><ul><li>A startup's wishlist is a backlog, not a scope. The job is to pick the first three</li><li>Borrow patterns from apps people already use, even outside your industry</li><li>Cheap tools like Google Sheets and forms can stand in for features until users prove the need</li></ul></div>
+        <div class="stat" style="--c:var(--sun)"><span class="n">3</span><p>PRDs</p></div>
+        <div class="stat" style="--c:var(--mint)"><span class="n">12</span><p>competitors benchmarked</p></div>
+        <div class="stat" style="--c:var(--pink)"><span class="n">7</span><p>high-fidelity screens</p></div>
+        <div class="stat" style="--c:var(--lilac)"><span class="n">10</span><p>week build plan, estimated</p></div>
       </div>
     </section>
 
@@ -1494,8 +1545,8 @@ footer{padding:26px 0 40px;text-align:center;font-weight:600;color:var(--muted);
   });
 
   /* simple router: #/dastaar and #/explore are case study pages, anything else is home */
-  var views={home:document.getElementById('view-home'),dastaar:document.getElementById('view-dastaar'),explore:document.getElementById('view-explore'),bschool:document.getElementById('view-bschool')};
-  var titles={home:'Harseerat Kaur | Product Manager',dastaar:'DASTAAR case study | Harseerat Kaur',explore:'Explore page case study | Harseerat Kaur',bschool:'B-school career platform case study | Harseerat Kaur'};
+  var views={home:document.getElementById('view-home'),dastaar:document.getElementById('view-dastaar'),coach:document.getElementById('view-coach'),explore:document.getElementById('view-explore'),bschool:document.getElementById('view-bschool')};
+  var titles={home:'Harseerat Kaur | Product Manager',dastaar:'DASTAAR case study | Harseerat Kaur',coach:'AI Interview Coach case study | Harseerat Kaur',explore:'Explore page case study | Harseerat Kaur',bschool:'B-school career platform case study | Harseerat Kaur'};
   var current=null;
   function route(){
     var h=location.hash||'', v='home', target=null;
